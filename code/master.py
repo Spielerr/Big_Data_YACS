@@ -329,8 +329,6 @@ class WorkerManager(threading.Thread):
                     threadLock.release()
 
 
-
-
 workers = initWorkers(configJson)
 
 scheduler = Scheduler(schedulingAlgorithm,workers)
@@ -354,7 +352,6 @@ def close_sockets(signum,frame):
     workerSocket.close()
     logger.info("Ending Master")
     sys.exit(1)
-
 
 
 sig_int = signal.getsignal(signal.SIGINT)

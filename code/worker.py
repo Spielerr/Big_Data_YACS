@@ -34,7 +34,6 @@ Task Queue maintains the queue of tasks as arrived from master
 """
 taskQueue = []
 
-
 """
 Listens to master for task communication
 Runs on a separate thread
@@ -77,6 +76,7 @@ class Worker(threading.Thread):
             temp_tq = copy.deepcopy(taskQueue) 
             time.sleep(1)
             threadLock.acquire()
+            
             # Execution simulation
             for task in temp_tq:
                 task['duration'] = task['duration'] - 1
@@ -94,6 +94,7 @@ class Worker(threading.Thread):
                     toMasterCommunicationSocket.connect(("localhost",masterPort))
                     toMasterCommunicationSocket.sendall(task.encode())
                     toMasterCommunicationSocket.close()
+
             # Add all tasks that were added to task queue during sleep of 1 second into task pool
             if len(taskQueue) > len(temp_tq):
                 temp_tq.extend(taskQueue[len(temp_tq)::])
@@ -118,8 +119,6 @@ def close_sockets(signum,frame):
     
     fromMasterCommunicationSocket.close()
     sys.exit(1)
-
-
-    
+   
 sig_int = signal.getsignal(signal.SIGINT)
 signal.signal(signal.SIGINT,close_sockets)

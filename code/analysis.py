@@ -8,7 +8,7 @@ import sys
 from datetime import *
 import seaborn as sns
 import pandas as pd
-
+import json
 """
 Store all information required from log file into a dictionary
 Scheduler stores the scheduler name(Random/ Round Robin/ Least Loaded)
@@ -16,6 +16,9 @@ Scheduler stores the scheduler name(Random/ Round Robin/ Least Loaded)
 log_dict={}
 Scheduler = ""
 
+configFile = open("config.json","r")
+configJson = json.load(configFile)
+configFile.close()
 """
 Regex to match and acquire necessary information to calculate statistical values and plot graphs
 """
@@ -88,8 +91,19 @@ def mymatch2(pat, line):
 Fetch scheduler name for carrying out analysis on each of the sceduling algorithms
 Write mean and median job and task completion times into a separate file and read it later for graphing purposes
 """
-file_name = sys.argv[1]
-file1 = open(file_name, 'r')
+file_name1 = sys.argv[1]
+file_name2 = sys.argv[2]
+
+worker_id_list = []
+workers = configJson["workers"]
+for worker in workers:
+	worker_id_list.append(worker["worker_id"])
+
+
+
+file1 = open(file_name1, 'r')
+
+
 pat = r"((\d{4})-(\d{2})-(\d{2}))\s*((\d{2}):(\d{2}):(\d{2}).(\d{3}))\s*(.*?)\s*(Arrival|Starting|Ending)(.*)"
 pat2 = r".*?Scheduler\s*=\s*(.*?)$"
 while 1:
@@ -100,6 +114,20 @@ while 1:
 	if not line:
 		break
 file1.close()
+
+for i in worker_id_list:
+	file_name = file_name2.split("_", 1)
+	file_name = ("_" + str(i) +"_").join(file_name)
+	file2 = open(file_name, 'r')
+	while 1:
+
+		line = file2.readline()
+		mymatch(pat, line)
+		mymatch2(pat2, line)
+		if not line:
+			break
+
+	file2.close()
 
 worker_t_c_t = []
 job_t_c_t = []
@@ -133,7 +161,7 @@ Provide argument as 1 to generate the bar graphs for Part 2 Result 1
 Reads from csv file consisting of the job and task mean and median completion times
 """
 try:
-	if sys.argv[3] == '1':
+	if sys.argv[4] == '1':
 		"""
 		Read the statistic values from the csv file into a 2d-array (statistic)
 		"""
@@ -147,7 +175,7 @@ try:
 
 		statistic = []
 		algorithm = []
-		file1 = open(sys.argv[2], "r")
+		file1 = open(sys.argv[3], "r")
 		while 1:
 			line = file1.readline()
 			if not line:
@@ -182,7 +210,7 @@ Provide command line argument as 2 to calculate the mean and median task and job
 Generate line graphs and heatmaps to show analysis
 """
 try:
-	if sys.argv[3] == '2':
+	if sys.argv[4] == '2':
 		"""
 		To plot a simple line graph showing the cumulative number of tasks assigned
 		for each worker machine
@@ -240,6 +268,6 @@ try:
 		plt.show()
 		plt.savefig('../analysis/' + Scheduler + '_heatmap2.png')
 except:
-	file1 = open(sys.argv[2], "a")
+	file1 = open(sys.argv[3], "a")
 	file1.write("{},{},{},{},{}\n".format(Scheduler, np.mean(worker_t_c_t), np.median(worker_t_c_t), np.mean(job_t_c_t), np.median(job_t_c_t)))
 	file1.close()

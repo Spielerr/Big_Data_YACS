@@ -5,12 +5,16 @@ import json
 import signal
 import time
 import copy
+import logging
 
 masterPort = 5001
 
 workerPort = int(sys.argv[1])
 worker_id = sys.argv[2]
 
+logging.basicConfig(filename="worker_" + worker_id + "_log_file.log", filemode= "w" ,format="%(name)s - %(asctime)s.%(msecs)03d %(levelname)s : %(message)s", datefmt='%Y-%m-%d %I:%M:%S')
+logger = logging.getLogger()
+logger.setLevel(logging.DEBUG)
 
 """
 Setting up socket with which Worker receives from master the tasks
@@ -46,6 +50,11 @@ class Listener(threading.Thread):
             taskData = json.loads(taskData)
             
             threadLock.acquire()
+            if taskData["type"] == 'M':
+                logger.info("Starting Map Task task_id = {} job_id = {} on Worker worker_id = {}".format(taskData['task_id'], taskData['job_id'], worker_id))
+            else:
+                logger.info("Starting Reduce Task task_id = {} job_id = {} on Worker worker_id = {}".format(taskData['task_id'], taskData['job_id'], worker_id))
+            
             taskQueue.append(taskData)
             threadLock.release()
             
@@ -73,6 +82,11 @@ class Worker(threading.Thread):
                 task['duration'] = task['duration'] - 1
                 # Check if task execution completed
                 if int(task['duration']) == 0:
+                    if task["type"] == 'M':
+                        logger.info("Ending Map Task task_id = {} job_id = {} on Worker worker_id = {}".format(task['task_id'], task['job_id'], worker_id))
+                    else:
+                        logger.info("Ending Reduce Task task_id = {} job_id = {} on Worker worker_id = {}".format(task['task_id'], task['job_id'], worker_id))
+
                     task['worker_id'] = worker_id
                     task = json.dumps(task)
                     # Communicate with master about task completion

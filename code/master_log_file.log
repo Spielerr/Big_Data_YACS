@@ -1,417 +1,442 @@
-root - 2020-12-01 11:25:17.221 DEBUG : Binding Socket to listen to jobs
-root - 2020-12-01 11:25:17.222 DEBUG : Binding socket to listen to Workers
-root - 2020-12-01 11:25:17.222 INFO : Using Scheduler = LL
-root - 2020-12-01 11:25:22.304 INFO : Arrival Job job_id = 0
-root - 2020-12-01 11:25:22.304 INFO : Starting Job job_id = 0
-root - 2020-12-01 11:25:22.307 INFO : Starting Map Task task_id = 0_M0 job_id = 0 on Worker worker_id = 3
-root - 2020-12-01 11:25:22.307 INFO : Starting Map Task task_id = 0_M1 job_id = 0 on Worker worker_id = 3
-root - 2020-12-01 11:25:23.676 INFO : Ending Map task task_id = 0_M0 job_id = 0
-root - 2020-12-01 11:25:24.678 INFO : Ending Map task task_id = 0_M1 job_id = 0
-root - 2020-12-01 11:25:24.678 INFO : Starting Reduce Task task_id = 0_R0 job_id = 0 on Worker worker_id = 3
-root - 2020-12-01 11:25:24.678 INFO : Starting Reduce Task task_id = 0_R1 job_id = 0 on Worker worker_id = 3
-root - 2020-12-01 11:25:25.805 INFO : Arrival Job job_id = 1
-root - 2020-12-01 11:25:25.805 INFO : Starting Job job_id = 1
-root - 2020-12-01 11:25:25.805 INFO : Starting Map Task task_id = 1_M0 job_id = 1 on Worker worker_id = 2
-root - 2020-12-01 11:25:25.805 INFO : Starting Map Task task_id = 1_M1 job_id = 1 on Worker worker_id = 3
-root - 2020-12-01 11:25:26.681 INFO : Ending Reduce task task_id = 0_R1 job_id = 0
-root - 2020-12-01 11:25:27.773 INFO : Arrival Job job_id = 2
-root - 2020-12-01 11:25:27.773 INFO : Starting Job job_id = 2
-root - 2020-12-01 11:25:27.773 INFO : Starting Map Task task_id = 2_M0 job_id = 2 on Worker worker_id = 3
-root - 2020-12-01 11:25:28.683 INFO : Ending Reduce task task_id = 0_R0 job_id = 0
-root - 2020-12-01 11:25:28.683 INFO : Ending Job job_id = 0
-root - 2020-12-01 11:25:28.775 INFO : Arrival Job job_id = 3
-root - 2020-12-01 11:25:28.775 INFO : Starting Job job_id = 3
-root - 2020-12-01 11:25:28.775 INFO : Starting Map Task task_id = 3_M0 job_id = 3 on Worker worker_id = 3
-root - 2020-12-01 11:25:28.775 INFO : Starting Map Task task_id = 3_M1 job_id = 3 on Worker worker_id = 2
-root - 2020-12-01 11:25:28.775 INFO : Starting Map Task task_id = 3_M2 job_id = 3 on Worker worker_id = 3
-root - 2020-12-01 11:25:28.775 INFO : Starting Map Task task_id = 3_M3 job_id = 3 on Worker worker_id = 2
-root - 2020-12-01 11:25:29.685 INFO : Ending Map task task_id = 1_M0 job_id = 1
-root - 2020-12-01 11:25:29.777 INFO : Arrival Job job_id = 4
-root - 2020-12-01 11:25:29.777 INFO : Starting Job job_id = 4
-root - 2020-12-01 11:25:29.777 INFO : Starting Map Task task_id = 4_M0 job_id = 4 on Worker worker_id = 2
-root - 2020-12-01 11:25:30.686 INFO : Ending Map task task_id = 1_M1 job_id = 1
-root - 2020-12-01 11:25:30.686 INFO : Starting Reduce Task task_id = 1_R0 job_id = 1 on Worker worker_id = 3
-root - 2020-12-01 11:25:31.688 INFO : Ending Map task task_id = 3_M0 job_id = 3
-root - 2020-12-01 11:25:32.689 INFO : Ending Map task task_id = 3_M2 job_id = 3
-root - 2020-12-01 11:25:32.865 INFO : Arrival Job job_id = 5
-root - 2020-12-01 11:25:32.865 INFO : Starting Job job_id = 5
-root - 2020-12-01 11:25:32.868 INFO : Starting Map Task task_id = 5_M0 job_id = 5 on Worker worker_id = 3
-root - 2020-12-01 11:25:33.691 INFO : Ending Map task task_id = 3_M3 job_id = 3
-root - 2020-12-01 11:25:33.869 INFO : Arrival Job job_id = 6
-root - 2020-12-01 11:25:33.869 INFO : Starting Job job_id = 6
-root - 2020-12-01 11:25:33.870 INFO : Starting Map Task task_id = 6_M0 job_id = 6 on Worker worker_id = 3
-root - 2020-12-01 11:25:33.870 INFO : Starting Map Task task_id = 6_M1 job_id = 6 on Worker worker_id = 2
-root - 2020-12-01 11:25:33.870 INFO : Starting Map Task task_id = 6_M2 job_id = 6 on Worker worker_id = 3
-root - 2020-12-01 11:25:34.692 INFO : Ending Map task task_id = 2_M0 job_id = 2
-root - 2020-12-01 11:25:34.692 INFO : Starting Reduce Task task_id = 2_R0 job_id = 2 on Worker worker_id = 3
-root - 2020-12-01 11:25:34.871 INFO : Arrival Job job_id = 7
-root - 2020-12-01 11:25:34.871 INFO : Starting Job job_id = 7
-root - 2020-12-01 11:25:34.872 INFO : Starting Map Task task_id = 7_M0 job_id = 7 on Worker worker_id = 2
-root - 2020-12-01 11:25:34.872 INFO : Starting Map Task task_id = 7_M1 job_id = 7 on Worker worker_id = 3
-root - 2020-12-01 11:25:34.872 INFO : Starting Map Task task_id = 7_M2 job_id = 7 on Worker worker_id = 1
-root - 2020-12-01 11:25:34.872 INFO : Starting Map Task task_id = 7_M3 job_id = 7 on Worker worker_id = 2
-root - 2020-12-01 11:25:35.694 INFO : Ending Map task task_id = 3_M1 job_id = 3
-root - 2020-12-01 11:25:35.695 INFO : Starting Reduce Task task_id = 3_R0 job_id = 3 on Worker worker_id = 2
-root - 2020-12-01 11:25:36.696 INFO : Ending Reduce task task_id = 1_R0 job_id = 1
-root - 2020-12-01 11:25:36.696 INFO : Ending Job job_id = 1
-root - 2020-12-01 11:25:37.365 INFO : Arrival Job job_id = 8
-root - 2020-12-01 11:25:37.365 INFO : Starting Job job_id = 8
-root - 2020-12-01 11:25:37.365 INFO : Starting Map Task task_id = 8_M0 job_id = 8 on Worker worker_id = 3
-root - 2020-12-01 11:25:37.365 INFO : Starting Map Task task_id = 8_M1 job_id = 8 on Worker worker_id = 3
-root - 2020-12-01 11:25:37.366 INFO : Starting Map Task task_id = 8_M2 job_id = 8 on Worker worker_id = 1
-root - 2020-12-01 11:25:37.366 INFO : Starting Map Task task_id = 8_M3 job_id = 8 on Worker worker_id = 2
-root - 2020-12-01 11:25:37.698 INFO : Ending Map task task_id = 4_M0 job_id = 4
-root - 2020-12-01 11:25:37.698 INFO : Starting Reduce Task task_id = 4_R0 job_id = 4 on Worker worker_id = 2
-root - 2020-12-01 11:25:37.698 INFO : Starting Reduce Task task_id = 4_R1 job_id = 4 on Worker worker_id = 3
-root - 2020-12-01 11:25:38.700 INFO : Ending Map task task_id = 6_M1 job_id = 6
-root - 2020-12-01 11:25:39.572 INFO : Arrival Job job_id = 9
-root - 2020-12-01 11:25:39.572 INFO : Starting Job job_id = 9
-root - 2020-12-01 11:25:39.572 INFO : Starting Map Task task_id = 9_M0 job_id = 9 on Worker worker_id = 2
-root - 2020-12-01 11:25:39.573 INFO : Starting Map Task task_id = 9_M1 job_id = 9 on Worker worker_id = 1
-root - 2020-12-01 11:25:39.573 INFO : Starting Map Task task_id = 9_M2 job_id = 9 on Worker worker_id = 2
-root - 2020-12-01 11:25:39.573 INFO : Starting Map Task task_id = 9_M3 job_id = 9 on Worker worker_id = 3
-root - 2020-12-01 11:25:39.573 DEBUG : Full
-root - 2020-12-01 11:25:39.701 INFO : Ending Map task task_id = 5_M0 job_id = 5
-root - 2020-12-01 11:25:39.701 INFO : Starting Reduce Task task_id = 5_R0 job_id = 5 on Worker worker_id = 3
-root - 2020-12-01 11:25:39.702 DEBUG : Full
-root - 2020-12-01 11:25:40.575 INFO : Arrival Job job_id = 10
-root - 2020-12-01 11:25:40.575 DEBUG : Full
-root - 2020-12-01 11:25:40.703 INFO : Ending Map task task_id = 6_M0 job_id = 6
-root - 2020-12-01 11:25:40.703 INFO : Starting Job job_id = 10
-root - 2020-12-01 11:25:40.703 INFO : Starting Map Task task_id = 10_M0 job_id = 10 on Worker worker_id = 3
-root - 2020-12-01 11:25:40.703 DEBUG : Full
-root - 2020-12-01 11:25:41.704 INFO : Ending Map task task_id = 7_M0 job_id = 7
-root - 2020-12-01 11:25:42.706 INFO : Ending Map task task_id = 7_M2 job_id = 7
-root - 2020-12-01 11:25:43.274 INFO : Arrival Job job_id = 11
-root - 2020-12-01 11:25:43.275 INFO : Starting Job job_id = 11
-root - 2020-12-01 11:25:43.275 INFO : Starting Map Task task_id = 11_M0 job_id = 11 on Worker worker_id = 1
-root - 2020-12-01 11:25:43.275 INFO : Starting Map Task task_id = 11_M1 job_id = 11 on Worker worker_id = 2
-root - 2020-12-01 11:25:43.275 DEBUG : Full
-root - 2020-12-01 11:25:43.707 INFO : Ending Map task task_id = 6_M2 job_id = 6
-root - 2020-12-01 11:25:43.708 INFO : Starting Map Task task_id = 11_M2 job_id = 11 on Worker worker_id = 3
-root - 2020-12-01 11:25:43.708 DEBUG : Full
-root - 2020-12-01 11:25:44.277 INFO : Arrival Job job_id = 12
-root - 2020-12-01 11:25:44.277 DEBUG : Full
-root - 2020-12-01 11:25:44.709 INFO : Ending Map task task_id = 7_M3 job_id = 7
-root - 2020-12-01 11:25:44.710 INFO : Starting Reduce Task task_id = 6_R0 job_id = 6 on Worker worker_id = 2
-root - 2020-12-01 11:25:44.710 DEBUG : Full
-root - 2020-12-01 11:25:45.278 INFO : Arrival Job job_id = 13
-root - 2020-12-01 11:25:45.279 DEBUG : Full
-root - 2020-12-01 11:25:45.711 INFO : Ending Map task task_id = 8_M0 job_id = 8
-root - 2020-12-01 11:25:45.711 INFO : Starting Reduce Task task_id = 6_R1 job_id = 6 on Worker worker_id = 3
-root - 2020-12-01 11:25:45.711 DEBUG : Full
-root - 2020-12-01 11:25:46.280 INFO : Arrival Job job_id = 14
-root - 2020-12-01 11:25:46.280 DEBUG : Full
-root - 2020-12-01 11:25:46.713 INFO : Ending Reduce task task_id = 3_R0 job_id = 3
-root - 2020-12-01 11:25:46.713 INFO : Ending Job job_id = 3
-root - 2020-12-01 11:25:46.713 INFO : Starting Job job_id = 12
-root - 2020-12-01 11:25:46.713 INFO : Starting Map Task task_id = 12_M0 job_id = 12 on Worker worker_id = 2
-root - 2020-12-01 11:25:46.713 DEBUG : Full
-root - 2020-12-01 11:25:47.281 INFO : Arrival Job job_id = 15
-root - 2020-12-01 11:25:47.282 DEBUG : Full
-root - 2020-12-01 11:25:47.715 INFO : Ending Reduce task task_id = 4_R0 job_id = 4
-root - 2020-12-01 11:25:47.715 INFO : Starting Job job_id = 13
-root - 2020-12-01 11:25:47.715 INFO : Starting Map Task task_id = 13_M0 job_id = 13 on Worker worker_id = 2
-root - 2020-12-01 11:25:47.715 DEBUG : Full
-root - 2020-12-01 11:25:48.283 INFO : Arrival Job job_id = 16
-root - 2020-12-01 11:25:48.283 DEBUG : Full
-root - 2020-12-01 11:25:48.716 INFO : Ending Map task task_id = 8_M2 job_id = 8
-root - 2020-12-01 11:25:48.717 INFO : Starting Map Task task_id = 13_M1 job_id = 13 on Worker worker_id = 1
-root - 2020-12-01 11:25:48.717 DEBUG : Full
-root - 2020-12-01 11:25:49.718 INFO : Ending Reduce task task_id = 2_R0 job_id = 2
-root - 2020-12-01 11:25:49.718 INFO : Ending Job job_id = 2
-root - 2020-12-01 11:25:49.719 INFO : Starting Map Task task_id = 13_M2 job_id = 13 on Worker worker_id = 3
-root - 2020-12-01 11:25:49.719 DEBUG : Full
-root - 2020-12-01 11:25:50.032 INFO : Arrival Job job_id = 17
-root - 2020-12-01 11:25:50.032 DEBUG : Full
-root - 2020-12-01 11:25:50.721 INFO : Ending Map task task_id = 7_M1 job_id = 7
-root - 2020-12-01 11:25:50.721 INFO : Starting Map Task task_id = 13_M3 job_id = 13 on Worker worker_id = 3
-root - 2020-12-01 11:25:50.721 DEBUG : Full
-root - 2020-12-01 11:25:51.033 INFO : Arrival Job job_id = 18
-root - 2020-12-01 11:25:51.033 DEBUG : Full
-root - 2020-12-01 11:25:51.722 INFO : Ending Map task task_id = 8_M1 job_id = 8
-root - 2020-12-01 11:25:51.722 INFO : Starting Job job_id = 14
-root - 2020-12-01 11:25:51.723 INFO : Starting Map Task task_id = 14_M0 job_id = 14 on Worker worker_id = 3
-root - 2020-12-01 11:25:51.723 DEBUG : Full
-root - 2020-12-01 11:25:52.035 INFO : Arrival Job job_id = 19
-root - 2020-12-01 11:25:52.035 DEBUG : Full
-root - 2020-12-01 11:25:52.724 INFO : Ending Map task task_id = 8_M3 job_id = 8
-root - 2020-12-01 11:25:52.724 INFO : Starting Job job_id = 15
-root - 2020-12-01 11:25:52.724 INFO : Starting Map Task task_id = 15_M0 job_id = 15 on Worker worker_id = 2
-root - 2020-12-01 11:25:52.724 DEBUG : Full
-root - 2020-12-01 11:25:53.037 INFO : Arrival Job job_id = 20
-root - 2020-12-01 11:25:53.037 DEBUG : Full
-root - 2020-12-01 11:25:53.726 INFO : Ending Map task task_id = 9_M3 job_id = 9
-root - 2020-12-01 11:25:53.726 INFO : Starting Map Task task_id = 15_M1 job_id = 15 on Worker worker_id = 3
-root - 2020-12-01 11:25:53.726 DEBUG : Full
-root - 2020-12-01 11:25:54.039 INFO : Arrival Job job_id = 21
-root - 2020-12-01 11:25:54.039 DEBUG : Full
-root - 2020-12-01 11:25:54.727 INFO : Ending Map task task_id = 9_M1 job_id = 9
-root - 2020-12-01 11:25:54.727 INFO : Starting Job job_id = 16
-root - 2020-12-01 11:25:54.728 INFO : Starting Map Task task_id = 16_M0 job_id = 16 on Worker worker_id = 1
-root - 2020-12-01 11:25:54.728 DEBUG : Full
-root - 2020-12-01 11:25:55.041 INFO : Arrival Job job_id = 22
-root - 2020-12-01 11:25:55.041 DEBUG : Full
-root - 2020-12-01 11:25:55.730 INFO : Ending Reduce task task_id = 4_R1 job_id = 4
-root - 2020-12-01 11:25:55.730 INFO : Ending Job job_id = 4
-root - 2020-12-01 11:25:55.730 INFO : Starting Map Task task_id = 16_M1 job_id = 16 on Worker worker_id = 3
-root - 2020-12-01 11:25:55.730 DEBUG : Full
-root - 2020-12-01 11:25:56.042 INFO : Arrival Job job_id = 23
-root - 2020-12-01 11:25:56.042 DEBUG : Full
-root - 2020-12-01 11:25:56.732 INFO : Ending Map task task_id = 9_M0 job_id = 9
-root - 2020-12-01 11:25:56.732 INFO : Starting Map Task task_id = 16_M2 job_id = 16 on Worker worker_id = 2
-root - 2020-12-01 11:25:56.732 DEBUG : Full
-root - 2020-12-01 11:25:57.044 INFO : Arrival Job job_id = 24
-root - 2020-12-01 11:25:57.044 DEBUG : Full
-root - 2020-12-01 11:25:57.734 INFO : Ending Map task task_id = 9_M2 job_id = 9
-root - 2020-12-01 11:25:57.734 INFO : Starting Map Task task_id = 16_M3 job_id = 16 on Worker worker_id = 2
-root - 2020-12-01 11:25:57.734 DEBUG : Full
-root - 2020-12-01 11:25:58.073 INFO : Arrival Job job_id = 25
-root - 2020-12-01 11:25:58.074 DEBUG : Full
-root - 2020-12-01 11:25:58.736 INFO : Ending Map task task_id = 10_M0 job_id = 10
-root - 2020-12-01 11:25:58.736 INFO : Starting Job job_id = 17
-root - 2020-12-01 11:25:58.736 INFO : Starting Map Task task_id = 17_M0 job_id = 17 on Worker worker_id = 3
-root - 2020-12-01 11:25:58.736 DEBUG : Full
-root - 2020-12-01 11:25:59.082 INFO : Arrival Job job_id = 26
-root - 2020-12-01 11:25:59.082 DEBUG : Full
-root - 2020-12-01 11:25:59.738 INFO : Ending Map task task_id = 11_M1 job_id = 11
-root - 2020-12-01 11:25:59.738 INFO : Starting Map Task task_id = 17_M1 job_id = 17 on Worker worker_id = 2
-root - 2020-12-01 11:25:59.740 DEBUG : Full
-root - 2020-12-01 11:26:00.742 INFO : Ending Reduce task task_id = 5_R0 job_id = 5
-root - 2020-12-01 11:26:00.742 INFO : Ending Job job_id = 5
-root - 2020-12-01 11:26:00.742 INFO : Starting Map Task task_id = 17_M2 job_id = 17 on Worker worker_id = 3
-root - 2020-12-01 11:26:00.743 DEBUG : Full
-root - 2020-12-01 11:26:01.019 INFO : Arrival Job job_id = 27
-root - 2020-12-01 11:26:01.019 DEBUG : Full
-root - 2020-12-01 11:26:01.744 INFO : Ending Map task task_id = 11_M0 job_id = 11
-root - 2020-12-01 11:26:01.744 INFO : Starting Map Task task_id = 17_M3 job_id = 17 on Worker worker_id = 1
-root - 2020-12-01 11:26:01.744 DEBUG : Full
-root - 2020-12-01 11:26:02.282 INFO : Arrival Job job_id = 28
-root - 2020-12-01 11:26:02.282 DEBUG : Full
-root - 2020-12-01 11:26:02.746 INFO : Ending Reduce task task_id = 6_R0 job_id = 6
-root - 2020-12-01 11:26:02.746 INFO : Starting Reduce Task task_id = 7_R0 job_id = 7 on Worker worker_id = 2
-root - 2020-12-01 11:26:02.746 DEBUG : Full
-root - 2020-12-01 11:26:03.343 INFO : Arrival Job job_id = 29
-root - 2020-12-01 11:26:03.343 DEBUG : Full
-root - 2020-12-01 11:26:03.748 INFO : Ending Map task task_id = 12_M0 job_id = 12
-root - 2020-12-01 11:26:03.748 INFO : Starting Reduce Task task_id = 7_R1 job_id = 7 on Worker worker_id = 2
-root - 2020-12-01 11:26:03.748 DEBUG : Full
-root - 2020-12-01 11:26:04.750 INFO : Ending Map task task_id = 11_M2 job_id = 11
-root - 2020-12-01 11:26:04.750 INFO : Starting Job job_id = 18
-root - 2020-12-01 11:26:04.753 INFO : Starting Map Task task_id = 18_M0 job_id = 18 on Worker worker_id = 3
-root - 2020-12-01 11:26:04.753 DEBUG : Full
-root - 2020-12-01 11:26:05.754 INFO : Ending Map task task_id = 13_M0 job_id = 13
-root - 2020-12-01 11:26:05.754 INFO : Starting Job job_id = 19
-root - 2020-12-01 11:26:05.754 INFO : Starting Map Task task_id = 19_M0 job_id = 19 on Worker worker_id = 2
-root - 2020-12-01 11:26:05.754 DEBUG : Full
-root - 2020-12-01 11:26:06.756 INFO : Ending Reduce task task_id = 6_R1 job_id = 6
-root - 2020-12-01 11:26:06.756 INFO : Ending Job job_id = 6
-root - 2020-12-01 11:26:06.756 INFO : Starting Reduce Task task_id = 8_R0 job_id = 8 on Worker worker_id = 3
-root - 2020-12-01 11:26:06.756 DEBUG : Full
-root - 2020-12-01 11:26:07.758 INFO : Ending Map task task_id = 13_M1 job_id = 13
-root - 2020-12-01 11:26:07.758 INFO : Starting Job job_id = 20
-root - 2020-12-01 11:26:07.758 INFO : Starting Map Task task_id = 20_M0 job_id = 20 on Worker worker_id = 1
-root - 2020-12-01 11:26:07.758 DEBUG : Full
-root - 2020-12-01 11:26:08.759 INFO : Ending Map task task_id = 13_M3 job_id = 13
-root - 2020-12-01 11:26:08.760 INFO : Starting Map Task task_id = 20_M1 job_id = 20 on Worker worker_id = 3
-root - 2020-12-01 11:26:08.760 DEBUG : Full
-root - 2020-12-01 11:26:09.761 INFO : Ending Map task task_id = 14_M0 job_id = 14
-root - 2020-12-01 11:26:09.761 INFO : Starting Job job_id = 21
-root - 2020-12-01 11:26:09.764 INFO : Starting Map Task task_id = 21_M0 job_id = 21 on Worker worker_id = 3
-root - 2020-12-01 11:26:09.765 DEBUG : Full
-root - 2020-12-01 11:26:10.766 INFO : Ending Map task task_id = 13_M2 job_id = 13
-root - 2020-12-01 11:26:10.766 INFO : Starting Map Task task_id = 21_M1 job_id = 21 on Worker worker_id = 3
-root - 2020-12-01 11:26:10.766 DEBUG : Full
-root - 2020-12-01 11:26:11.768 INFO : Ending Map task task_id = 15_M0 job_id = 15
-root - 2020-12-01 11:26:11.768 INFO : Starting Map Task task_id = 21_M2 job_id = 21 on Worker worker_id = 2
-root - 2020-12-01 11:26:11.768 DEBUG : Full
-root - 2020-12-01 11:26:12.770 INFO : Ending Map task task_id = 16_M0 job_id = 16
-root - 2020-12-01 11:26:12.770 INFO : Starting Job job_id = 22
-root - 2020-12-01 11:26:12.770 INFO : Starting Map Task task_id = 22_M0 job_id = 22 on Worker worker_id = 1
-root - 2020-12-01 11:26:12.770 DEBUG : Full
-root - 2020-12-01 11:26:13.771 INFO : Ending Map task task_id = 15_M1 job_id = 15
-root - 2020-12-01 11:26:13.772 INFO : Starting Map Task task_id = 22_M1 job_id = 22 on Worker worker_id = 3
-root - 2020-12-01 11:26:13.772 DEBUG : Full
-root - 2020-12-01 11:26:14.773 INFO : Ending Map task task_id = 16_M1 job_id = 16
-root - 2020-12-01 11:26:14.773 INFO : Starting Job job_id = 23
-root - 2020-12-01 11:26:14.773 INFO : Starting Map Task task_id = 23_M0 job_id = 23 on Worker worker_id = 3
-root - 2020-12-01 11:26:14.773 DEBUG : Full
-root - 2020-12-01 11:26:15.775 INFO : Ending Map task task_id = 16_M2 job_id = 16
-root - 2020-12-01 11:26:15.775 INFO : Starting Job job_id = 24
-root - 2020-12-01 11:26:15.775 INFO : Starting Map Task task_id = 24_M0 job_id = 24 on Worker worker_id = 2
-root - 2020-12-01 11:26:15.775 DEBUG : Full
-root - 2020-12-01 11:26:16.776 INFO : Ending Map task task_id = 16_M3 job_id = 16
-root - 2020-12-01 11:26:16.777 INFO : Starting Reduce Task task_id = 9_R0 job_id = 9 on Worker worker_id = 2
-root - 2020-12-01 11:26:16.777 DEBUG : Full
-root - 2020-12-01 11:26:17.779 INFO : Ending Map task task_id = 17_M1 job_id = 17
-root - 2020-12-01 11:26:17.779 INFO : Starting Job job_id = 25
-root - 2020-12-01 11:26:17.779 INFO : Starting Map Task task_id = 25_M0 job_id = 25 on Worker worker_id = 2
-root - 2020-12-01 11:26:17.779 DEBUG : Full
-root - 2020-12-01 11:26:18.780 INFO : Ending Map task task_id = 17_M0 job_id = 17
-root - 2020-12-01 11:26:18.781 INFO : Starting Reduce Task task_id = 10_R0 job_id = 10 on Worker worker_id = 3
-root - 2020-12-01 11:26:18.781 DEBUG : Full
-root - 2020-12-01 11:26:19.782 INFO : Ending Reduce task task_id = 7_R1 job_id = 7
-root - 2020-12-01 11:26:19.782 INFO : Starting Job job_id = 26
-root - 2020-12-01 11:26:19.785 INFO : Starting Map Task task_id = 26_M0 job_id = 26 on Worker worker_id = 2
-root - 2020-12-01 11:26:19.785 DEBUG : Full
-root - 2020-12-01 11:26:20.786 INFO : Ending Map task task_id = 17_M2 job_id = 17
-root - 2020-12-01 11:26:20.787 INFO : Starting Map Task task_id = 26_M1 job_id = 26 on Worker worker_id = 3
-root - 2020-12-01 11:26:20.787 DEBUG : Full
-root - 2020-12-01 11:26:21.788 INFO : Ending Map task task_id = 17_M3 job_id = 17
-root - 2020-12-01 11:26:21.788 INFO : Starting Job job_id = 27
-root - 2020-12-01 11:26:21.788 INFO : Starting Map Task task_id = 27_M0 job_id = 27 on Worker worker_id = 1
-root - 2020-12-01 11:26:21.788 DEBUG : Full
-root - 2020-12-01 11:26:22.790 INFO : Ending Map task task_id = 18_M0 job_id = 18
-root - 2020-12-01 11:26:22.790 INFO : Starting Map Task task_id = 27_M1 job_id = 27 on Worker worker_id = 3
-root - 2020-12-01 11:26:22.790 DEBUG : Full
-root - 2020-12-01 11:26:23.791 INFO : Ending Reduce task task_id = 7_R0 job_id = 7
-root - 2020-12-01 11:26:23.791 INFO : Ending Job job_id = 7
-root - 2020-12-01 11:26:23.792 INFO : Starting Map Task task_id = 27_M2 job_id = 27 on Worker worker_id = 2
-root - 2020-12-01 11:26:23.792 DEBUG : Full
-root - 2020-12-01 11:26:24.793 INFO : Ending Map task task_id = 19_M0 job_id = 19
-root - 2020-12-01 11:26:24.794 INFO : Starting Map Task task_id = 27_M3 job_id = 27 on Worker worker_id = 2
-root - 2020-12-01 11:26:24.796 DEBUG : Full
-root - 2020-12-01 11:26:25.798 INFO : Ending Reduce task task_id = 8_R0 job_id = 8
-root - 2020-12-01 11:26:25.798 INFO : Ending Job job_id = 8
-root - 2020-12-01 11:26:25.798 INFO : Starting Job job_id = 28
-root - 2020-12-01 11:26:25.798 INFO : Starting Map Task task_id = 28_M0 job_id = 28 on Worker worker_id = 3
-root - 2020-12-01 11:26:25.798 DEBUG : Full
-root - 2020-12-01 11:26:26.800 INFO : Ending Map task task_id = 20_M0 job_id = 20
-root - 2020-12-01 11:26:26.800 INFO : Starting Map Task task_id = 28_M1 job_id = 28 on Worker worker_id = 1
-root - 2020-12-01 11:26:26.800 DEBUG : Full
-root - 2020-12-01 11:26:27.801 INFO : Ending Map task task_id = 20_M1 job_id = 20
-root - 2020-12-01 11:26:27.801 INFO : Starting Job job_id = 29
-root - 2020-12-01 11:26:27.802 INFO : Starting Map Task task_id = 29_M0 job_id = 29 on Worker worker_id = 3
-root - 2020-12-01 11:26:27.802 DEBUG : Full
-root - 2020-12-01 11:26:28.803 INFO : Ending Map task task_id = 21_M0 job_id = 21
-root - 2020-12-01 11:26:28.803 INFO : Starting Map Task task_id = 29_M1 job_id = 29 on Worker worker_id = 3
-root - 2020-12-01 11:26:28.803 DEBUG : Full
-root - 2020-12-01 11:26:29.805 INFO : Ending Map task task_id = 21_M1 job_id = 21
-root - 2020-12-01 11:26:29.806 INFO : Starting Map Task task_id = 29_M2 job_id = 29 on Worker worker_id = 3
-root - 2020-12-01 11:26:29.808 DEBUG : Full
-root - 2020-12-01 11:26:30.809 INFO : Ending Map task task_id = 21_M2 job_id = 21
-root - 2020-12-01 11:26:30.810 INFO : Starting Reduce Task task_id = 12_R0 job_id = 12 on Worker worker_id = 2
-root - 2020-12-01 11:26:30.810 DEBUG : Full
-root - 2020-12-01 11:26:31.811 INFO : Ending Map task task_id = 22_M0 job_id = 22
-root - 2020-12-01 11:26:31.811 INFO : Starting Reduce Task task_id = 12_R1 job_id = 12 on Worker worker_id = 1
-root - 2020-12-01 11:26:31.811 DEBUG : Full
-root - 2020-12-01 11:26:32.812 INFO : Ending Map task task_id = 23_M0 job_id = 23
-root - 2020-12-01 11:26:32.813 INFO : Starting Reduce Task task_id = 11_R0 job_id = 11 on Worker worker_id = 3
-root - 2020-12-01 11:26:32.813 DEBUG : Full
-root - 2020-12-01 11:26:33.814 INFO : Ending Map task task_id = 22_M1 job_id = 22
-root - 2020-12-01 11:26:33.815 INFO : Starting Reduce Task task_id = 11_R1 job_id = 11 on Worker worker_id = 3
-root - 2020-12-01 11:26:33.815 DEBUG : Full
-root - 2020-12-01 11:26:34.816 INFO : Ending Map task task_id = 24_M0 job_id = 24
-root - 2020-12-01 11:26:34.816 INFO : Starting Reduce Task task_id = 14_R0 job_id = 14 on Worker worker_id = 2
-root - 2020-12-01 11:26:34.818 DEBUG : Full
-root - 2020-12-01 11:26:35.821 INFO : Ending Map task task_id = 25_M0 job_id = 25
-root - 2020-12-01 11:26:35.821 INFO : Starting Reduce Task task_id = 13_R0 job_id = 13 on Worker worker_id = 2
-root - 2020-12-01 11:26:35.821 DEBUG : Full
-root - 2020-12-01 11:26:36.822 INFO : Ending Reduce task task_id = 10_R0 job_id = 10
-root - 2020-12-01 11:26:36.823 INFO : Ending Job job_id = 10
-root - 2020-12-01 11:26:36.823 INFO : Starting Reduce Task task_id = 15_R0 job_id = 15 on Worker worker_id = 3
-root - 2020-12-01 11:26:36.823 DEBUG : Full
-root - 2020-12-01 11:26:37.825 INFO : Ending Reduce task task_id = 9_R0 job_id = 9
-root - 2020-12-01 11:26:37.825 INFO : Ending Job job_id = 9
-root - 2020-12-01 11:26:37.825 INFO : Starting Reduce Task task_id = 15_R1 job_id = 15 on Worker worker_id = 2
-root - 2020-12-01 11:26:37.825 DEBUG : Full
-root - 2020-12-01 11:26:38.826 INFO : Ending Map task task_id = 26_M0 job_id = 26
-root - 2020-12-01 11:26:38.827 INFO : Starting Reduce Task task_id = 16_R0 job_id = 16 on Worker worker_id = 2
-root - 2020-12-01 11:26:38.827 DEBUG : Full
-root - 2020-12-01 11:26:39.828 INFO : Ending Map task task_id = 26_M1 job_id = 26
-root - 2020-12-01 11:26:39.829 INFO : Starting Reduce Task task_id = 16_R1 job_id = 16 on Worker worker_id = 3
-root - 2020-12-01 11:26:39.831 DEBUG : Full
-root - 2020-12-01 11:26:40.833 INFO : Ending Map task task_id = 27_M0 job_id = 27
-root - 2020-12-01 11:26:40.833 INFO : Starting Reduce Task task_id = 17_R0 job_id = 17 on Worker worker_id = 1
-root - 2020-12-01 11:26:40.833 DEBUG : Full
-root - 2020-12-01 11:26:41.834 INFO : Ending Map task task_id = 27_M1 job_id = 27
-root - 2020-12-01 11:26:41.835 INFO : Starting Reduce Task task_id = 18_R0 job_id = 18 on Worker worker_id = 3
-root - 2020-12-01 11:26:41.835 DEBUG : Full
-root - 2020-12-01 11:26:42.836 INFO : Ending Map task task_id = 27_M2 job_id = 27
-root - 2020-12-01 11:26:42.836 INFO : Starting Reduce Task task_id = 19_R0 job_id = 19 on Worker worker_id = 2
-root - 2020-12-01 11:26:42.836 DEBUG : Full
-root - 2020-12-01 11:26:43.838 INFO : Ending Map task task_id = 27_M3 job_id = 27
-root - 2020-12-01 11:26:43.838 INFO : Starting Reduce Task task_id = 20_R0 job_id = 20 on Worker worker_id = 2
-root - 2020-12-01 11:26:43.838 DEBUG : Full
-root - 2020-12-01 11:26:44.839 INFO : Ending Map task task_id = 28_M0 job_id = 28
-root - 2020-12-01 11:26:44.840 INFO : Starting Reduce Task task_id = 21_R0 job_id = 21 on Worker worker_id = 3
-root - 2020-12-01 11:26:44.842 DEBUG : Full
-root - 2020-12-01 11:26:45.843 INFO : Ending Map task task_id = 28_M1 job_id = 28
-root - 2020-12-01 11:26:45.843 INFO : Starting Reduce Task task_id = 21_R1 job_id = 21 on Worker worker_id = 1
-root - 2020-12-01 11:26:45.844 DEBUG : Full
-root - 2020-12-01 11:26:46.846 INFO : Ending Map task task_id = 29_M1 job_id = 29
-root - 2020-12-01 11:26:46.846 INFO : Starting Reduce Task task_id = 23_R0 job_id = 23 on Worker worker_id = 3
-root - 2020-12-01 11:26:46.846 DEBUG : Full
-root - 2020-12-01 11:26:47.848 INFO : Ending Map task task_id = 29_M0 job_id = 29
-root - 2020-12-01 11:26:47.848 INFO : Starting Reduce Task task_id = 22_R0 job_id = 22 on Worker worker_id = 3
-root - 2020-12-01 11:26:47.849 DEBUG : Full
-root - 2020-12-01 11:26:48.850 INFO : Ending Reduce task task_id = 12_R0 job_id = 12
-root - 2020-12-01 11:26:48.850 INFO : Starting Reduce Task task_id = 22_R1 job_id = 22 on Worker worker_id = 2
-root - 2020-12-01 11:26:48.850 DEBUG : Full
-root - 2020-12-01 11:26:49.852 INFO : Ending Reduce task task_id = 12_R1 job_id = 12
-root - 2020-12-01 11:26:49.852 INFO : Ending Job job_id = 12
-root - 2020-12-01 11:26:49.852 INFO : Starting Reduce Task task_id = 24_R0 job_id = 24 on Worker worker_id = 1
-root - 2020-12-01 11:26:49.852 DEBUG : Full
-root - 2020-12-01 11:26:50.853 INFO : Ending Map task task_id = 29_M2 job_id = 29
-root - 2020-12-01 11:26:50.854 INFO : Starting Reduce Task task_id = 25_R0 job_id = 25 on Worker worker_id = 3
-root - 2020-12-01 11:26:50.854 DEBUG : Full
-root - 2020-12-01 11:26:51.855 INFO : Ending Reduce task task_id = 11_R0 job_id = 11
-root - 2020-12-01 11:26:51.855 INFO : Starting Reduce Task task_id = 26_R0 job_id = 26 on Worker worker_id = 3
-root - 2020-12-01 11:26:51.855 DEBUG : Full
-root - 2020-12-01 11:26:52.857 INFO : Ending Reduce task task_id = 14_R0 job_id = 14
-root - 2020-12-01 11:26:52.857 INFO : Ending Job job_id = 14
-root - 2020-12-01 11:26:52.857 INFO : Starting Reduce Task task_id = 26_R1 job_id = 26 on Worker worker_id = 2
-root - 2020-12-01 11:26:52.857 DEBUG : Full
-root - 2020-12-01 11:26:53.859 INFO : Ending Reduce task task_id = 11_R1 job_id = 11
-root - 2020-12-01 11:26:53.859 INFO : Ending Job job_id = 11
-root - 2020-12-01 11:26:53.859 INFO : Starting Reduce Task task_id = 27_R0 job_id = 27 on Worker worker_id = 3
-root - 2020-12-01 11:26:53.860 DEBUG : Full
-root - 2020-12-01 11:26:54.861 INFO : Ending Reduce task task_id = 13_R0 job_id = 13
-root - 2020-12-01 11:26:54.861 INFO : Ending Job job_id = 13
-root - 2020-12-01 11:26:54.864 INFO : Starting Reduce Task task_id = 27_R1 job_id = 27 on Worker worker_id = 2
-root - 2020-12-01 11:26:54.864 DEBUG : Full
-root - 2020-12-01 11:26:55.866 INFO : Ending Reduce task task_id = 15_R1 job_id = 15
-root - 2020-12-01 11:26:55.866 INFO : Starting Reduce Task task_id = 28_R0 job_id = 28 on Worker worker_id = 2
-root - 2020-12-01 11:26:55.866 DEBUG : Full
-root - 2020-12-01 11:26:56.868 INFO : Ending Reduce task task_id = 16_R0 job_id = 16
-root - 2020-12-01 11:26:56.868 INFO : Starting Reduce Task task_id = 28_R1 job_id = 28 on Worker worker_id = 2
-root - 2020-12-01 11:26:56.868 DEBUG : Full
-root - 2020-12-01 11:26:57.869 INFO : Ending Reduce task task_id = 15_R0 job_id = 15
-root - 2020-12-01 11:26:57.870 INFO : Ending Job job_id = 15
-root - 2020-12-01 11:26:57.870 INFO : Starting Reduce Task task_id = 29_R0 job_id = 29 on Worker worker_id = 3
-root - 2020-12-01 11:26:57.870 DEBUG : Full
-root - 2020-12-01 11:26:58.871 INFO : Ending Reduce task task_id = 16_R1 job_id = 16
-root - 2020-12-01 11:26:58.871 INFO : Ending Job job_id = 16
-root - 2020-12-01 11:26:59.873 INFO : Ending Reduce task task_id = 17_R0 job_id = 17
-root - 2020-12-01 11:26:59.873 INFO : Ending Job job_id = 17
-root - 2020-12-01 11:27:00.874 INFO : Ending Reduce task task_id = 18_R0 job_id = 18
-root - 2020-12-01 11:27:00.874 INFO : Ending Job job_id = 18
-root - 2020-12-01 11:27:01.876 INFO : Ending Reduce task task_id = 20_R0 job_id = 20
-root - 2020-12-01 11:27:01.876 INFO : Ending Job job_id = 20
-root - 2020-12-01 11:27:02.877 INFO : Ending Reduce task task_id = 19_R0 job_id = 19
-root - 2020-12-01 11:27:02.878 INFO : Ending Job job_id = 19
-root - 2020-12-01 11:27:03.879 INFO : Ending Reduce task task_id = 21_R0 job_id = 21
-root - 2020-12-01 11:27:04.881 INFO : Ending Reduce task task_id = 23_R0 job_id = 23
-root - 2020-12-01 11:27:04.881 INFO : Ending Job job_id = 23
-root - 2020-12-01 11:27:05.883 INFO : Ending Reduce task task_id = 22_R0 job_id = 22
-root - 2020-12-01 11:27:06.884 INFO : Ending Reduce task task_id = 21_R1 job_id = 21
-root - 2020-12-01 11:27:06.884 INFO : Ending Job job_id = 21
-root - 2020-12-01 11:27:07.886 INFO : Ending Reduce task task_id = 22_R1 job_id = 22
-root - 2020-12-01 11:27:07.886 INFO : Ending Job job_id = 22
-root - 2020-12-01 11:27:08.888 INFO : Ending Reduce task task_id = 24_R0 job_id = 24
-root - 2020-12-01 11:27:08.888 INFO : Ending Job job_id = 24
-root - 2020-12-01 11:27:09.890 INFO : Ending Reduce task task_id = 25_R0 job_id = 25
-root - 2020-12-01 11:27:09.890 INFO : Ending Job job_id = 25
-root - 2020-12-01 11:27:10.891 INFO : Ending Reduce task task_id = 26_R0 job_id = 26
-root - 2020-12-01 11:27:11.893 INFO : Ending Reduce task task_id = 26_R1 job_id = 26
-root - 2020-12-01 11:27:11.893 INFO : Ending Job job_id = 26
-root - 2020-12-01 11:27:12.894 INFO : Ending Reduce task task_id = 27_R1 job_id = 27
-root - 2020-12-01 11:27:13.896 INFO : Ending Reduce task task_id = 28_R0 job_id = 28
-root - 2020-12-01 11:27:14.898 INFO : Ending Reduce task task_id = 28_R1 job_id = 28
-root - 2020-12-01 11:27:14.898 INFO : Ending Job job_id = 28
-root - 2020-12-01 11:27:15.899 INFO : Ending Reduce task task_id = 27_R0 job_id = 27
-root - 2020-12-01 11:27:15.900 INFO : Ending Job job_id = 27
-root - 2020-12-01 11:27:16.901 INFO : Ending Reduce task task_id = 29_R0 job_id = 29
-root - 2020-12-01 11:27:16.901 INFO : Ending Job job_id = 29
-root - 2020-12-01 11:33:53.931 DEBUG : Sockets Closed
-root - 2020-12-01 11:33:53.931 INFO : Ending Master
+root - 2020-12-02 12:30:03.186 DEBUG : Binding Socket to listen to jobs
+root - 2020-12-02 12:30:03.186 DEBUG : Binding socket to listen to Workers
+root - 2020-12-02 12:30:03.187 INFO : Using Scheduler = LL
+root - 2020-12-02 12:30:06.624 INFO : Arrival Job job_id = 0
+root - 2020-12-02 12:30:06.624 INFO : Starting Job job_id = 0
+root - 2020-12-02 12:30:06.624 INFO : Sending Map Task task_id = 0_M0 job_id = 0 on Worker worker_id = 3
+root - 2020-12-02 12:30:06.624 INFO : Sending Map Task task_id = 0_M1 job_id = 0 on Worker worker_id = 3
+root - 2020-12-02 12:30:06.625 INFO : Sending Map Task task_id = 0_M2 job_id = 0 on Worker worker_id = 2
+root - 2020-12-02 12:30:06.625 INFO : Sending Map Task task_id = 0_M3 job_id = 0 on Worker worker_id = 3
+root - 2020-12-02 12:30:07.788 INFO : Received Map task task_id = 0_M2 job_id = 0
+root - 2020-12-02 12:30:07.879 INFO : Arrival Job job_id = 1
+root - 2020-12-02 12:30:07.879 INFO : Starting Job job_id = 1
+root - 2020-12-02 12:30:07.879 INFO : Sending Map Task task_id = 1_M0 job_id = 1 on Worker worker_id = 2
+root - 2020-12-02 12:30:07.879 INFO : Sending Map Task task_id = 1_M1 job_id = 1 on Worker worker_id = 2
+root - 2020-12-02 12:30:08.789 INFO : Received Map task task_id = 0_M3 job_id = 0
+root - 2020-12-02 12:30:08.881 INFO : Arrival Job job_id = 2
+root - 2020-12-02 12:30:08.881 INFO : Starting Job job_id = 2
+root - 2020-12-02 12:30:08.881 INFO : Sending Map Task task_id = 2_M0 job_id = 2 on Worker worker_id = 3
+root - 2020-12-02 12:30:08.881 INFO : Sending Map Task task_id = 2_M1 job_id = 2 on Worker worker_id = 3
+root - 2020-12-02 12:30:08.882 INFO : Sending Map Task task_id = 2_M2 job_id = 2 on Worker worker_id = 2
+root - 2020-12-02 12:30:08.882 INFO : Sending Map Task task_id = 2_M3 job_id = 2 on Worker worker_id = 3
+root - 2020-12-02 12:30:09.883 INFO : Arrival Job job_id = 3
+root - 2020-12-02 12:30:09.883 INFO : Starting Job job_id = 3
+root - 2020-12-02 12:30:09.883 INFO : Sending Map Task task_id = 3_M0 job_id = 3 on Worker worker_id = 2
+root - 2020-12-02 12:30:09.884 INFO : Sending Map Task task_id = 3_M1 job_id = 3 on Worker worker_id = 3
+root - 2020-12-02 12:30:09.884 INFO : Sending Map Task task_id = 3_M2 job_id = 3 on Worker worker_id = 1
+root - 2020-12-02 12:30:10.096 INFO : Received Map task task_id = 0_M0 job_id = 0
+root - 2020-12-02 12:30:10.885 INFO : Arrival Job job_id = 4
+root - 2020-12-02 12:30:10.886 INFO : Starting Job job_id = 4
+root - 2020-12-02 12:30:10.886 INFO : Sending Map Task task_id = 4_M0 job_id = 4 on Worker worker_id = 3
+root - 2020-12-02 12:30:11.098 INFO : Received Map task task_id = 2_M1 job_id = 2
+root - 2020-12-02 12:30:11.887 INFO : Arrival Job job_id = 5
+root - 2020-12-02 12:30:11.887 INFO : Starting Job job_id = 5
+root - 2020-12-02 12:30:11.888 INFO : Sending Map Task task_id = 5_M0 job_id = 5 on Worker worker_id = 3
+root - 2020-12-02 12:30:11.888 INFO : Sending Map Task task_id = 5_M1 job_id = 5 on Worker worker_id = 2
+root - 2020-12-02 12:30:11.888 INFO : Sending Map Task task_id = 5_M2 job_id = 5 on Worker worker_id = 3
+root - 2020-12-02 12:30:12.099 INFO : Received Map task task_id = 2_M3 job_id = 2
+root - 2020-12-02 12:30:12.889 INFO : Arrival Job job_id = 6
+root - 2020-12-02 12:30:12.890 INFO : Starting Job job_id = 6
+root - 2020-12-02 12:30:12.890 INFO : Sending Map Task task_id = 6_M0 job_id = 6 on Worker worker_id = 3
+root - 2020-12-02 12:30:12.890 INFO : Sending Map Task task_id = 6_M1 job_id = 6 on Worker worker_id = 1
+root - 2020-12-02 12:30:13.101 INFO : Received Map task task_id = 0_M1 job_id = 0
+root - 2020-12-02 12:30:13.101 INFO : Sending Reduce Task task_id = 0_R0 job_id = 0 on Worker worker_id = 3
+root - 2020-12-02 12:30:13.102 INFO : Sending Reduce Task task_id = 0_R1 job_id = 0 on Worker worker_id = 2
+root - 2020-12-02 12:30:13.892 INFO : Arrival Job job_id = 7
+root - 2020-12-02 12:30:13.892 INFO : Starting Job job_id = 7
+root - 2020-12-02 12:30:13.892 INFO : Sending Map Task task_id = 7_M0 job_id = 7 on Worker worker_id = 3
+root - 2020-12-02 12:30:13.892 INFO : Sending Map Task task_id = 7_M1 job_id = 7 on Worker worker_id = 1
+root - 2020-12-02 12:30:14.103 INFO : Received Map task task_id = 1_M0 job_id = 1
+root - 2020-12-02 12:30:14.894 INFO : Arrival Job job_id = 8
+root - 2020-12-02 12:30:14.894 INFO : Starting Job job_id = 8
+root - 2020-12-02 12:30:14.894 INFO : Sending Map Task task_id = 8_M0 job_id = 8 on Worker worker_id = 2
+root - 2020-12-02 12:30:14.894 INFO : Sending Map Task task_id = 8_M1 job_id = 8 on Worker worker_id = 2
+root - 2020-12-02 12:30:14.894 INFO : Sending Map Task task_id = 8_M2 job_id = 8 on Worker worker_id = 3
+root - 2020-12-02 12:30:14.894 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:15.105 INFO : Received Map task task_id = 1_M1 job_id = 1
+root - 2020-12-02 12:30:15.105 INFO : Sending Reduce Task task_id = 1_R0 job_id = 1 on Worker worker_id = 2
+root - 2020-12-02 12:30:15.105 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:15.896 INFO : Arrival Job job_id = 9
+root - 2020-12-02 12:30:15.896 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:16.106 INFO : Received Map task task_id = 2_M2 job_id = 2
+root - 2020-12-02 12:30:16.106 INFO : Sending Reduce Task task_id = 1_R1 job_id = 1 on Worker worker_id = 2
+root - 2020-12-02 12:30:16.106 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:16.898 INFO : Arrival Job job_id = 10
+root - 2020-12-02 12:30:16.898 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:17.108 INFO : Received Map task task_id = 3_M1 job_id = 3
+root - 2020-12-02 12:30:17.108 INFO : Starting Job job_id = 9
+root - 2020-12-02 12:30:17.108 INFO : Sending Map Task task_id = 9_M0 job_id = 9 on Worker worker_id = 3
+root - 2020-12-02 12:30:17.108 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:17.899 INFO : Arrival Job job_id = 11
+root - 2020-12-02 12:30:17.899 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:18.110 INFO : Received Map task task_id = 3_M2 job_id = 3
+root - 2020-12-02 12:30:18.110 INFO : Starting Job job_id = 10
+root - 2020-12-02 12:30:18.110 INFO : Sending Map Task task_id = 10_M0 job_id = 10 on Worker worker_id = 1
+root - 2020-12-02 12:30:18.110 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:18.901 INFO : Arrival Job job_id = 12
+root - 2020-12-02 12:30:18.901 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:19.111 INFO : Received Map task task_id = 3_M0 job_id = 3
+root - 2020-12-02 12:30:19.111 INFO : Starting Job job_id = 11
+root - 2020-12-02 12:30:19.112 INFO : Sending Map Task task_id = 11_M0 job_id = 11 on Worker worker_id = 2
+root - 2020-12-02 12:30:19.112 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:19.903 INFO : Arrival Job job_id = 13
+root - 2020-12-02 12:30:19.903 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:20.113 INFO : Received Map task task_id = 2_M0 job_id = 2
+root - 2020-12-02 12:30:20.113 INFO : Starting Job job_id = 12
+root - 2020-12-02 12:30:20.113 INFO : Sending Map Task task_id = 12_M0 job_id = 12 on Worker worker_id = 3
+root - 2020-12-02 12:30:20.113 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:20.905 INFO : Arrival Job job_id = 14
+root - 2020-12-02 12:30:20.905 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:21.115 INFO : Received Map task task_id = 5_M2 job_id = 5
+root - 2020-12-02 12:30:21.115 INFO : Sending Map Task task_id = 12_M1 job_id = 12 on Worker worker_id = 3
+root - 2020-12-02 12:30:21.115 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:21.906 INFO : Arrival Job job_id = 15
+root - 2020-12-02 12:30:21.906 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:22.117 INFO : Received Map task task_id = 4_M0 job_id = 4
+root - 2020-12-02 12:30:22.117 INFO : Sending Map Task task_id = 12_M2 job_id = 12 on Worker worker_id = 3
+root - 2020-12-02 12:30:22.117 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:22.908 INFO : Arrival Job job_id = 16
+root - 2020-12-02 12:30:22.908 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:23.119 INFO : Received Map task task_id = 5_M0 job_id = 5
+root - 2020-12-02 12:30:23.120 INFO : Sending Map Task task_id = 12_M3 job_id = 12 on Worker worker_id = 3
+root - 2020-12-02 12:30:23.120 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:23.909 INFO : Arrival Job job_id = 17
+root - 2020-12-02 12:30:23.910 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:24.121 INFO : Received Map task task_id = 6_M1 job_id = 6
+root - 2020-12-02 12:30:24.122 INFO : Sending Reduce Task task_id = 3_R0 job_id = 3 on Worker worker_id = 1
+root - 2020-12-02 12:30:24.122 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:24.912 INFO : Arrival Job job_id = 18
+root - 2020-12-02 12:30:24.912 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:25.123 INFO : Received Reduce task task_id = 0_R1 job_id = 0
+root - 2020-12-02 12:30:25.123 INFO : Sending Reduce Task task_id = 3_R1 job_id = 3 on Worker worker_id = 2
+root - 2020-12-02 12:30:25.123 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:25.913 INFO : Arrival Job job_id = 19
+root - 2020-12-02 12:30:25.914 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:26.125 INFO : Received Map task task_id = 5_M1 job_id = 5
+root - 2020-12-02 12:30:26.125 INFO : Starting Job job_id = 13
+root - 2020-12-02 12:30:26.125 INFO : Sending Map Task task_id = 13_M0 job_id = 13 on Worker worker_id = 2
+root - 2020-12-02 12:30:26.125 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:26.915 INFO : Arrival Job job_id = 20
+root - 2020-12-02 12:30:26.915 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:27.127 INFO : Received Map task task_id = 7_M0 job_id = 7
+root - 2020-12-02 12:30:27.127 INFO : Sending Map Task task_id = 13_M1 job_id = 13 on Worker worker_id = 3
+root - 2020-12-02 12:30:27.127 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:27.916 INFO : Arrival Job job_id = 21
+root - 2020-12-02 12:30:27.916 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:28.128 INFO : Received Map task task_id = 8_M2 job_id = 8
+root - 2020-12-02 12:30:28.129 INFO : Sending Map Task task_id = 13_M2 job_id = 13 on Worker worker_id = 3
+root - 2020-12-02 12:30:28.129 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:28.918 INFO : Arrival Job job_id = 22
+root - 2020-12-02 12:30:28.918 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:29.130 INFO : Received Reduce task task_id = 1_R0 job_id = 1
+root - 2020-12-02 12:30:29.130 INFO : Sending Reduce Task task_id = 2_R0 job_id = 2 on Worker worker_id = 2
+root - 2020-12-02 12:30:29.130 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:29.920 INFO : Arrival Job job_id = 23
+root - 2020-12-02 12:30:29.920 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:30.132 INFO : Received Map task task_id = 6_M0 job_id = 6
+root - 2020-12-02 12:30:30.132 INFO : Sending Reduce Task task_id = 2_R1 job_id = 2 on Worker worker_id = 3
+root - 2020-12-02 12:30:30.132 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:30.921 INFO : Arrival Job job_id = 24
+root - 2020-12-02 12:30:30.921 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:31.133 INFO : Received Reduce task task_id = 0_R0 job_id = 0
+root - 2020-12-02 12:30:31.134 INFO : Ending Job job_id = 0
+root - 2020-12-02 12:30:31.134 INFO : Starting Job job_id = 14
+root - 2020-12-02 12:30:31.134 INFO : Sending Map Task task_id = 14_M0 job_id = 14 on Worker worker_id = 3
+root - 2020-12-02 12:30:31.134 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:31.923 INFO : Arrival Job job_id = 25
+root - 2020-12-02 12:30:31.923 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:32.135 INFO : Received Map task task_id = 7_M1 job_id = 7
+root - 2020-12-02 12:30:32.136 INFO : Sending Map Task task_id = 14_M1 job_id = 14 on Worker worker_id = 1
+root - 2020-12-02 12:30:32.136 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:32.924 INFO : Arrival Job job_id = 26
+root - 2020-12-02 12:30:32.925 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:33.137 INFO : Received Map task task_id = 8_M1 job_id = 8
+root - 2020-12-02 12:30:33.137 INFO : Starting Job job_id = 15
+root - 2020-12-02 12:30:33.137 INFO : Sending Map Task task_id = 15_M0 job_id = 15 on Worker worker_id = 2
+root - 2020-12-02 12:30:33.137 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:34.062 INFO : Arrival Job job_id = 27
+root - 2020-12-02 12:30:34.062 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:34.139 INFO : Received Reduce task task_id = 1_R1 job_id = 1
+root - 2020-12-02 12:30:34.139 INFO : Ending Job job_id = 1
+root - 2020-12-02 12:30:34.139 INFO : Sending Reduce Task task_id = 4_R0 job_id = 4 on Worker worker_id = 2
+root - 2020-12-02 12:30:34.139 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:35.140 INFO : Received Map task task_id = 8_M0 job_id = 8
+root - 2020-12-02 12:30:35.141 INFO : Sending Reduce Task task_id = 4_R1 job_id = 4 on Worker worker_id = 2
+root - 2020-12-02 12:30:35.141 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:35.548 INFO : Arrival Job job_id = 28
+root - 2020-12-02 12:30:35.548 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:36.143 INFO : Received Map task task_id = 9_M0 job_id = 9
+root - 2020-12-02 12:30:36.143 INFO : Starting Job job_id = 16
+root - 2020-12-02 12:30:36.143 INFO : Sending Map Task task_id = 16_M0 job_id = 16 on Worker worker_id = 3
+root - 2020-12-02 12:30:36.143 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:36.565 INFO : Arrival Job job_id = 29
+root - 2020-12-02 12:30:36.565 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:37.145 INFO : Received Map task task_id = 10_M0 job_id = 10
+root - 2020-12-02 12:30:37.145 INFO : Starting Job job_id = 17
+root - 2020-12-02 12:30:37.145 INFO : Sending Map Task task_id = 17_M0 job_id = 17 on Worker worker_id = 1
+root - 2020-12-02 12:30:37.146 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:38.147 INFO : Received Map task task_id = 12_M0 job_id = 12
+root - 2020-12-02 12:30:38.147 INFO : Sending Map Task task_id = 17_M1 job_id = 17 on Worker worker_id = 3
+root - 2020-12-02 12:30:38.147 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:39.149 INFO : Received Map task task_id = 11_M0 job_id = 11
+root - 2020-12-02 12:30:39.149 INFO : Sending Map Task task_id = 17_M2 job_id = 17 on Worker worker_id = 2
+root - 2020-12-02 12:30:39.152 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:40.154 INFO : Received Map task task_id = 12_M1 job_id = 12
+root - 2020-12-02 12:30:40.154 INFO : Sending Map Task task_id = 17_M3 job_id = 17 on Worker worker_id = 3
+root - 2020-12-02 12:30:40.154 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:41.156 INFO : Received Map task task_id = 12_M2 job_id = 12
+root - 2020-12-02 12:30:41.156 INFO : Starting Job job_id = 18
+root - 2020-12-02 12:30:41.156 INFO : Sending Map Task task_id = 18_M0 job_id = 18 on Worker worker_id = 3
+root - 2020-12-02 12:30:41.156 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:42.157 INFO : Received Map task task_id = 12_M3 job_id = 12
+root - 2020-12-02 12:30:42.158 INFO : Sending Map Task task_id = 18_M1 job_id = 18 on Worker worker_id = 3
+root - 2020-12-02 12:30:42.158 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:43.159 INFO : Received Map task task_id = 13_M0 job_id = 13
+root - 2020-12-02 12:30:43.159 INFO : Starting Job job_id = 19
+root - 2020-12-02 12:30:43.160 INFO : Sending Map Task task_id = 19_M0 job_id = 19 on Worker worker_id = 2
+root - 2020-12-02 12:30:43.160 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:44.161 INFO : Received Reduce task task_id = 3_R0 job_id = 3
+root - 2020-12-02 12:30:44.162 INFO : Sending Map Task task_id = 19_M1 job_id = 19 on Worker worker_id = 1
+root - 2020-12-02 12:30:44.162 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:45.163 INFO : Received Map task task_id = 13_M1 job_id = 13
+root - 2020-12-02 12:30:45.164 INFO : Sending Reduce Task task_id = 5_R0 job_id = 5 on Worker worker_id = 3
+root - 2020-12-02 12:30:45.164 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:46.166 INFO : Received Reduce task task_id = 3_R1 job_id = 3
+root - 2020-12-02 12:30:46.166 INFO : Ending Job job_id = 3
+root - 2020-12-02 12:30:46.166 INFO : Sending Reduce Task task_id = 5_R1 job_id = 5 on Worker worker_id = 2
+root - 2020-12-02 12:30:46.166 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:47.168 INFO : Received Map task task_id = 13_M2 job_id = 13
+root - 2020-12-02 12:30:47.168 INFO : Starting Job job_id = 20
+root - 2020-12-02 12:30:47.168 INFO : Sending Map Task task_id = 20_M0 job_id = 20 on Worker worker_id = 3
+root - 2020-12-02 12:30:47.168 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:48.170 INFO : Received Reduce task task_id = 2_R0 job_id = 2
+root - 2020-12-02 12:30:48.170 INFO : Sending Map Task task_id = 20_M1 job_id = 20 on Worker worker_id = 2
+root - 2020-12-02 12:30:48.170 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:49.172 INFO : Received Reduce task task_id = 2_R1 job_id = 2
+root - 2020-12-02 12:30:49.172 INFO : Ending Job job_id = 2
+root - 2020-12-02 12:30:49.174 INFO : Starting Job job_id = 21
+root - 2020-12-02 12:30:49.174 INFO : Sending Map Task task_id = 21_M0 job_id = 21 on Worker worker_id = 3
+root - 2020-12-02 12:30:49.174 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:50.176 INFO : Received Map task task_id = 14_M0 job_id = 14
+root - 2020-12-02 12:30:50.177 INFO : Sending Map Task task_id = 21_M1 job_id = 21 on Worker worker_id = 3
+root - 2020-12-02 12:30:50.177 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:51.179 INFO : Received Map task task_id = 14_M1 job_id = 14
+root - 2020-12-02 12:30:51.179 INFO : Starting Job job_id = 22
+root - 2020-12-02 12:30:51.179 INFO : Sending Map Task task_id = 22_M0 job_id = 22 on Worker worker_id = 1
+root - 2020-12-02 12:30:51.179 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:52.181 INFO : Received Map task task_id = 15_M0 job_id = 15
+root - 2020-12-02 12:30:52.181 INFO : Sending Map Task task_id = 22_M1 job_id = 22 on Worker worker_id = 2
+root - 2020-12-02 12:30:52.181 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:53.183 INFO : Received Reduce task task_id = 4_R0 job_id = 4
+root - 2020-12-02 12:30:53.183 INFO : Starting Job job_id = 23
+root - 2020-12-02 12:30:53.183 INFO : Sending Map Task task_id = 23_M0 job_id = 23 on Worker worker_id = 2
+root - 2020-12-02 12:30:53.183 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:54.184 INFO : Received Reduce task task_id = 4_R1 job_id = 4
+root - 2020-12-02 12:30:54.185 INFO : Ending Job job_id = 4
+root - 2020-12-02 12:30:54.187 INFO : Sending Reduce Task task_id = 6_R0 job_id = 6 on Worker worker_id = 2
+root - 2020-12-02 12:30:54.187 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:55.189 INFO : Received Map task task_id = 16_M0 job_id = 16
+root - 2020-12-02 12:30:55.189 INFO : Sending Reduce Task task_id = 6_R1 job_id = 6 on Worker worker_id = 3
+root - 2020-12-02 12:30:55.189 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:56.191 INFO : Received Map task task_id = 17_M1 job_id = 17
+root - 2020-12-02 12:30:56.191 INFO : Starting Job job_id = 24
+root - 2020-12-02 12:30:56.191 INFO : Sending Map Task task_id = 24_M0 job_id = 24 on Worker worker_id = 3
+root - 2020-12-02 12:30:56.191 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:57.193 INFO : Received Map task task_id = 17_M0 job_id = 17
+root - 2020-12-02 12:30:57.193 INFO : Sending Map Task task_id = 24_M1 job_id = 24 on Worker worker_id = 1
+root - 2020-12-02 12:30:57.193 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:58.195 INFO : Received Map task task_id = 17_M2 job_id = 17
+root - 2020-12-02 12:30:58.195 INFO : Starting Job job_id = 25
+root - 2020-12-02 12:30:58.195 INFO : Sending Map Task task_id = 25_M0 job_id = 25 on Worker worker_id = 2
+root - 2020-12-02 12:30:58.195 DEBUG : All Workers' slots full
+root - 2020-12-02 12:30:59.197 INFO : Received Map task task_id = 17_M3 job_id = 17
+root - 2020-12-02 12:30:59.197 INFO : Sending Reduce Task task_id = 7_R0 job_id = 7 on Worker worker_id = 3
+root - 2020-12-02 12:30:59.199 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:00.200 INFO : Received Map task task_id = 18_M1 job_id = 18
+root - 2020-12-02 12:31:00.201 INFO : Sending Reduce Task task_id = 7_R1 job_id = 7 on Worker worker_id = 3
+root - 2020-12-02 12:31:00.201 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:01.202 INFO : Received Map task task_id = 19_M0 job_id = 19
+root - 2020-12-02 12:31:01.202 INFO : Starting Job job_id = 26
+root - 2020-12-02 12:31:01.203 INFO : Sending Map Task task_id = 26_M0 job_id = 26 on Worker worker_id = 2
+root - 2020-12-02 12:31:01.203 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:02.204 INFO : Received Map task task_id = 18_M0 job_id = 18
+root - 2020-12-02 12:31:02.204 INFO : Sending Map Task task_id = 26_M1 job_id = 26 on Worker worker_id = 3
+root - 2020-12-02 12:31:02.204 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:03.206 INFO : Received Reduce task task_id = 5_R1 job_id = 5
+root - 2020-12-02 12:31:03.206 INFO : Sending Map Task task_id = 26_M2 job_id = 26 on Worker worker_id = 2
+root - 2020-12-02 12:31:03.206 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:04.207 INFO : Received Map task task_id = 19_M1 job_id = 19
+root - 2020-12-02 12:31:04.208 INFO : Sending Map Task task_id = 26_M3 job_id = 26 on Worker worker_id = 1
+root - 2020-12-02 12:31:04.209 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:05.211 INFO : Received Reduce task task_id = 5_R0 job_id = 5
+root - 2020-12-02 12:31:05.211 INFO : Ending Job job_id = 5
+root - 2020-12-02 12:31:05.211 INFO : Starting Job job_id = 27
+root - 2020-12-02 12:31:05.212 INFO : Sending Map Task task_id = 27_M0 job_id = 27 on Worker worker_id = 3
+root - 2020-12-02 12:31:05.212 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:06.214 INFO : Received Map task task_id = 20_M1 job_id = 20
+root - 2020-12-02 12:31:06.214 INFO : Sending Map Task task_id = 27_M1 job_id = 27 on Worker worker_id = 2
+root - 2020-12-02 12:31:06.214 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:07.216 INFO : Received Map task task_id = 20_M0 job_id = 20
+root - 2020-12-02 12:31:07.217 INFO : Sending Reduce Task task_id = 8_R0 job_id = 8 on Worker worker_id = 3
+root - 2020-12-02 12:31:07.217 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:08.218 INFO : Received Map task task_id = 21_M0 job_id = 21
+root - 2020-12-02 12:31:08.218 INFO : Sending Reduce Task task_id = 8_R1 job_id = 8 on Worker worker_id = 3
+root - 2020-12-02 12:31:08.218 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:09.220 INFO : Received Map task task_id = 22_M0 job_id = 22
+root - 2020-12-02 12:31:09.220 INFO : Starting Job job_id = 28
+root - 2020-12-02 12:31:09.223 INFO : Sending Map Task task_id = 28_M0 job_id = 28 on Worker worker_id = 1
+root - 2020-12-02 12:31:09.223 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:10.225 INFO : Received Map task task_id = 22_M1 job_id = 22
+root - 2020-12-02 12:31:10.225 INFO : Sending Map Task task_id = 28_M1 job_id = 28 on Worker worker_id = 2
+root - 2020-12-02 12:31:10.225 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:11.226 INFO : Received Map task task_id = 21_M1 job_id = 21
+root - 2020-12-02 12:31:11.227 INFO : Sending Map Task task_id = 28_M2 job_id = 28 on Worker worker_id = 3
+root - 2020-12-02 12:31:11.227 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:12.228 INFO : Received Map task task_id = 23_M0 job_id = 23
+root - 2020-12-02 12:31:12.228 INFO : Sending Reduce Task task_id = 9_R0 job_id = 9 on Worker worker_id = 2
+root - 2020-12-02 12:31:12.229 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:13.230 INFO : Received Map task task_id = 24_M1 job_id = 24
+root - 2020-12-02 12:31:13.230 INFO : Starting Job job_id = 29
+root - 2020-12-02 12:31:13.230 INFO : Sending Map Task task_id = 29_M0 job_id = 29 on Worker worker_id = 1
+root - 2020-12-02 12:31:13.230 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:14.232 INFO : Received Reduce task task_id = 6_R0 job_id = 6
+root - 2020-12-02 12:31:14.232 INFO : Sending Map Task task_id = 29_M1 job_id = 29 on Worker worker_id = 2
+root - 2020-12-02 12:31:14.235 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:15.236 INFO : Received Map task task_id = 24_M0 job_id = 24
+root - 2020-12-02 12:31:15.236 INFO : Sending Reduce Task task_id = 10_R0 job_id = 10 on Worker worker_id = 3
+root - 2020-12-02 12:31:15.237 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:16.238 INFO : Received Map task task_id = 25_M0 job_id = 25
+root - 2020-12-02 12:31:16.238 INFO : Sending Reduce Task task_id = 11_R0 job_id = 11 on Worker worker_id = 2
+root - 2020-12-02 12:31:16.238 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:17.240 INFO : Received Reduce task task_id = 6_R1 job_id = 6
+root - 2020-12-02 12:31:17.240 INFO : Ending Job job_id = 6
+root - 2020-12-02 12:31:17.240 INFO : Sending Reduce Task task_id = 11_R1 job_id = 11 on Worker worker_id = 3
+root - 2020-12-02 12:31:17.240 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:18.241 INFO : Received Reduce task task_id = 7_R0 job_id = 7
+root - 2020-12-02 12:31:18.242 INFO : Sending Reduce Task task_id = 12_R0 job_id = 12 on Worker worker_id = 3
+root - 2020-12-02 12:31:18.242 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:19.243 INFO : Received Reduce task task_id = 7_R1 job_id = 7
+root - 2020-12-02 12:31:19.243 INFO : Ending Job job_id = 7
+root - 2020-12-02 12:31:19.246 INFO : Sending Reduce Task task_id = 13_R0 job_id = 13 on Worker worker_id = 3
+root - 2020-12-02 12:31:19.247 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:20.248 INFO : Received Map task task_id = 26_M2 job_id = 26
+root - 2020-12-02 12:31:20.249 INFO : Sending Reduce Task task_id = 13_R1 job_id = 13 on Worker worker_id = 2
+root - 2020-12-02 12:31:20.249 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:21.251 INFO : Received Map task task_id = 26_M1 job_id = 26
+root - 2020-12-02 12:31:21.251 INFO : Sending Reduce Task task_id = 14_R0 job_id = 14 on Worker worker_id = 3
+root - 2020-12-02 12:31:21.251 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:22.253 INFO : Received Map task task_id = 26_M0 job_id = 26
+root - 2020-12-02 12:31:22.253 INFO : Sending Reduce Task task_id = 14_R1 job_id = 14 on Worker worker_id = 2
+root - 2020-12-02 12:31:22.253 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:23.255 INFO : Received Map task task_id = 27_M0 job_id = 27
+root - 2020-12-02 12:31:23.255 INFO : Sending Reduce Task task_id = 15_R0 job_id = 15 on Worker worker_id = 3
+root - 2020-12-02 12:31:23.255 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:24.257 INFO : Received Map task task_id = 26_M3 job_id = 26
+root - 2020-12-02 12:31:24.257 INFO : Sending Reduce Task task_id = 16_R0 job_id = 16 on Worker worker_id = 1
+root - 2020-12-02 12:31:24.259 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:25.260 INFO : Received Map task task_id = 27_M1 job_id = 27
+root - 2020-12-02 12:31:25.261 INFO : Sending Reduce Task task_id = 17_R0 job_id = 17 on Worker worker_id = 2
+root - 2020-12-02 12:31:25.261 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:26.262 INFO : Received Reduce task task_id = 8_R0 job_id = 8
+root - 2020-12-02 12:31:26.262 INFO : Sending Reduce Task task_id = 18_R0 job_id = 18 on Worker worker_id = 3
+root - 2020-12-02 12:31:26.262 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:27.263 INFO : Received Reduce task task_id = 8_R1 job_id = 8
+root - 2020-12-02 12:31:27.264 INFO : Ending Job job_id = 8
+root - 2020-12-02 12:31:27.264 INFO : Sending Reduce Task task_id = 19_R0 job_id = 19 on Worker worker_id = 3
+root - 2020-12-02 12:31:27.264 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:28.265 INFO : Received Map task task_id = 28_M0 job_id = 28
+root - 2020-12-02 12:31:28.265 INFO : Sending Reduce Task task_id = 19_R1 job_id = 19 on Worker worker_id = 1
+root - 2020-12-02 12:31:28.265 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:29.267 INFO : Received Map task task_id = 28_M1 job_id = 28
+root - 2020-12-02 12:31:29.267 INFO : Sending Reduce Task task_id = 20_R0 job_id = 20 on Worker worker_id = 2
+root - 2020-12-02 12:31:29.269 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:30.271 INFO : Received Map task task_id = 28_M2 job_id = 28
+root - 2020-12-02 12:31:30.271 INFO : Sending Reduce Task task_id = 20_R1 job_id = 20 on Worker worker_id = 3
+root - 2020-12-02 12:31:30.272 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:31.273 INFO : Received Map task task_id = 29_M0 job_id = 29
+root - 2020-12-02 12:31:31.273 INFO : Sending Reduce Task task_id = 22_R0 job_id = 22 on Worker worker_id = 1
+root - 2020-12-02 12:31:31.273 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:32.275 INFO : Received Reduce task task_id = 9_R0 job_id = 9
+root - 2020-12-02 12:31:32.275 INFO : Ending Job job_id = 9
+root - 2020-12-02 12:31:32.275 INFO : Sending Reduce Task task_id = 22_R1 job_id = 22 on Worker worker_id = 2
+root - 2020-12-02 12:31:32.275 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:33.277 INFO : Received Map task task_id = 29_M1 job_id = 29
+root - 2020-12-02 12:31:33.277 INFO : Sending Reduce Task task_id = 21_R0 job_id = 21 on Worker worker_id = 2
+root - 2020-12-02 12:31:33.277 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:34.279 INFO : Received Reduce task task_id = 11_R0 job_id = 11
+root - 2020-12-02 12:31:34.279 INFO : Sending Reduce Task task_id = 21_R1 job_id = 21 on Worker worker_id = 2
+root - 2020-12-02 12:31:34.279 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:35.280 INFO : Received Reduce task task_id = 10_R0 job_id = 10
+root - 2020-12-02 12:31:35.280 INFO : Ending Job job_id = 10
+root - 2020-12-02 12:31:35.280 INFO : Sending Reduce Task task_id = 23_R0 job_id = 23 on Worker worker_id = 3
+root - 2020-12-02 12:31:35.281 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:36.283 INFO : Received Reduce task task_id = 11_R1 job_id = 11
+root - 2020-12-02 12:31:36.283 INFO : Ending Job job_id = 11
+root - 2020-12-02 12:31:36.283 INFO : Sending Reduce Task task_id = 24_R0 job_id = 24 on Worker worker_id = 3
+root - 2020-12-02 12:31:36.283 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:37.284 INFO : Received Reduce task task_id = 12_R0 job_id = 12
+root - 2020-12-02 12:31:37.284 INFO : Ending Job job_id = 12
+root - 2020-12-02 12:31:37.285 INFO : Sending Reduce Task task_id = 24_R1 job_id = 24 on Worker worker_id = 3
+root - 2020-12-02 12:31:37.285 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:38.287 INFO : Received Reduce task task_id = 13_R1 job_id = 13
+root - 2020-12-02 12:31:38.287 INFO : Sending Reduce Task task_id = 25_R0 job_id = 25 on Worker worker_id = 2
+root - 2020-12-02 12:31:38.287 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:39.288 INFO : Received Reduce task task_id = 14_R0 job_id = 14
+root - 2020-12-02 12:31:39.289 INFO : Sending Reduce Task task_id = 25_R1 job_id = 25 on Worker worker_id = 3
+root - 2020-12-02 12:31:39.289 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:40.290 INFO : Received Reduce task task_id = 13_R0 job_id = 13
+root - 2020-12-02 12:31:40.291 INFO : Ending Job job_id = 13
+root - 2020-12-02 12:31:40.291 INFO : Sending Reduce Task task_id = 26_R0 job_id = 26 on Worker worker_id = 3
+root - 2020-12-02 12:31:40.291 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:41.293 INFO : Received Reduce task task_id = 15_R0 job_id = 15
+root - 2020-12-02 12:31:41.293 INFO : Ending Job job_id = 15
+root - 2020-12-02 12:31:41.293 INFO : Sending Reduce Task task_id = 27_R0 job_id = 27 on Worker worker_id = 3
+root - 2020-12-02 12:31:41.293 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:42.294 INFO : Received Reduce task task_id = 14_R1 job_id = 14
+root - 2020-12-02 12:31:42.294 INFO : Ending Job job_id = 14
+root - 2020-12-02 12:31:42.295 INFO : Sending Reduce Task task_id = 27_R1 job_id = 27 on Worker worker_id = 2
+root - 2020-12-02 12:31:42.295 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:43.297 INFO : Received Reduce task task_id = 16_R0 job_id = 16
+root - 2020-12-02 12:31:43.297 INFO : Ending Job job_id = 16
+root - 2020-12-02 12:31:43.297 INFO : Sending Reduce Task task_id = 28_R0 job_id = 28 on Worker worker_id = 1
+root - 2020-12-02 12:31:43.297 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:44.299 INFO : Received Reduce task task_id = 17_R0 job_id = 17
+root - 2020-12-02 12:31:44.299 INFO : Ending Job job_id = 17
+root - 2020-12-02 12:31:44.301 INFO : Sending Reduce Task task_id = 28_R1 job_id = 28 on Worker worker_id = 2
+root - 2020-12-02 12:31:44.301 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:45.303 INFO : Received Reduce task task_id = 19_R0 job_id = 19
+root - 2020-12-02 12:31:45.303 INFO : Sending Reduce Task task_id = 29_R0 job_id = 29 on Worker worker_id = 3
+root - 2020-12-02 12:31:45.303 DEBUG : All Workers' slots full
+root - 2020-12-02 12:31:46.305 INFO : Received Reduce task task_id = 19_R1 job_id = 19
+root - 2020-12-02 12:31:46.305 INFO : Ending Job job_id = 19
+root - 2020-12-02 12:31:47.307 INFO : Received Reduce task task_id = 20_R0 job_id = 20
+root - 2020-12-02 12:31:48.308 INFO : Received Reduce task task_id = 18_R0 job_id = 18
+root - 2020-12-02 12:31:48.308 INFO : Ending Job job_id = 18
+root - 2020-12-02 12:31:49.310 INFO : Received Reduce task task_id = 20_R1 job_id = 20
+root - 2020-12-02 12:31:49.310 INFO : Ending Job job_id = 20
+root - 2020-12-02 12:31:50.314 INFO : Received Reduce task task_id = 22_R0 job_id = 22
+root - 2020-12-02 12:31:51.316 INFO : Received Reduce task task_id = 22_R1 job_id = 22
+root - 2020-12-02 12:31:51.316 INFO : Ending Job job_id = 22
+root - 2020-12-02 12:31:52.318 INFO : Received Reduce task task_id = 23_R0 job_id = 23
+root - 2020-12-02 12:31:52.318 INFO : Ending Job job_id = 23
+root - 2020-12-02 12:31:53.319 INFO : Received Reduce task task_id = 21_R0 job_id = 21
+root - 2020-12-02 12:31:54.321 INFO : Received Reduce task task_id = 21_R1 job_id = 21
+root - 2020-12-02 12:31:54.321 INFO : Ending Job job_id = 21
+root - 2020-12-02 12:31:55.322 INFO : Received Reduce task task_id = 24_R0 job_id = 24
+root - 2020-12-02 12:31:56.324 INFO : Received Reduce task task_id = 25_R0 job_id = 25
+root - 2020-12-02 12:31:57.326 INFO : Received Reduce task task_id = 25_R1 job_id = 25
+root - 2020-12-02 12:31:57.326 INFO : Ending Job job_id = 25
+root - 2020-12-02 12:31:58.327 INFO : Received Reduce task task_id = 24_R1 job_id = 24
+root - 2020-12-02 12:31:58.327 INFO : Ending Job job_id = 24
+root - 2020-12-02 12:31:59.329 INFO : Received Reduce task task_id = 26_R0 job_id = 26
+root - 2020-12-02 12:31:59.329 INFO : Ending Job job_id = 26
+root - 2020-12-02 12:32:00.332 INFO : Received Reduce task task_id = 27_R0 job_id = 27
+root - 2020-12-02 12:32:01.334 INFO : Received Reduce task task_id = 27_R1 job_id = 27
+root - 2020-12-02 12:32:01.334 INFO : Ending Job job_id = 27
+root - 2020-12-02 12:32:02.336 INFO : Received Reduce task task_id = 28_R1 job_id = 28
+root - 2020-12-02 12:32:03.337 INFO : Received Reduce task task_id = 28_R0 job_id = 28
+root - 2020-12-02 12:32:03.337 INFO : Ending Job job_id = 28
+root - 2020-12-02 12:32:04.339 INFO : Received Reduce task task_id = 29_R0 job_id = 29
+root - 2020-12-02 12:32:04.339 INFO : Ending Job job_id = 29
+root - 2020-12-02 12:37:43.378 DEBUG : Sockets Closed
+root - 2020-12-02 12:37:43.378 INFO : Ending Master

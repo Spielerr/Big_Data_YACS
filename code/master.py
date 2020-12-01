@@ -240,9 +240,9 @@ class JobScheduler(threading.Thread):
                 toWorkerSocket.close()
                 task = json.loads(task)
                 if task['type'] == "M":
-                    logger.info("Starting Map Task task_id = {} job_id = {} on Worker worker_id = {}".format(task['task_id'],task['job_id'],worker.workerID))
+                    logger.info("Sending Map Task task_id = {} job_id = {} on Worker worker_id = {}".format(task['task_id'],task['job_id'],worker.workerID))
                 else:
-                    logger.info("Starting Reduce Task task_id = {} job_id = {} on Worker worker_id = {}".format(task['task_id'],task['job_id'],worker.workerID))
+                    logger.info("Sending Reduce Task task_id = {} job_id = {} on Worker worker_id = {}".format(task['task_id'],task['job_id'],worker.workerID))
                 threadLock.acquire()
                 worker = self.scheduler.scheduler()
                 threadLock.release()
@@ -287,9 +287,9 @@ class WorkerManager(threading.Thread):
                 toWorkerSocket.close()
                 task = json.loads(task)
                 if task['type'] == "M":
-                    logger.info("Starting Map Task task_id = {} job_id = {} on Worker worker_id = {}".format(task['task_id'],task['job_id'],worker.workerID))
+                    logger.info("Sending Map Task task_id = {} job_id = {} on Worker worker_id = {}".format(task['task_id'],task['job_id'],worker.workerID))
                 else:
-                    logger.info("Starting Reduce Task task_id = {} job_id = {} on Worker worker_id = {}".format(task['task_id'],task['job_id'],worker.workerID))
+                    logger.info("Sending Reduce Task task_id = {} job_id = {} on Worker worker_id = {}".format(task['task_id'],task['job_id'],worker.workerID))
                 threadLock.acquire()
                 worker = scheduler.scheduler()
                 threadLock.release()
@@ -307,7 +307,7 @@ class WorkerManager(threading.Thread):
             threadLock.release()
             # Updating job completion information
             if workerData['type'] == "M":
-                logger.info("Ending Map task task_id = {} job_id = {}".format(workerData['task_id'],workerData['job_id']))
+                logger.info("Received Map task task_id = {} job_id = {}".format(workerData['task_id'],workerData['job_id']))
                 job.numOfMapTasks -= 1
                 #If all ma tasks completed, adding reduce tasks to task pool for scheduling
                 if job.numOfMapTasks == 0:
@@ -317,7 +317,7 @@ class WorkerManager(threading.Thread):
                         taskQueue.append(reduce_task)
                     threadLock.release()
             else:
-                logger.info("Ending Reduce task task_id = {} job_id = {}".format(workerData['task_id'],workerData['job_id']))
+                logger.info("Received Reduce task task_id = {} job_id = {}".format(workerData['task_id'],workerData['job_id']))
                 job.numOfRedTasks -= 1
                 #If all reduce tasks completed, means job completed
                 #Updating the job completion information

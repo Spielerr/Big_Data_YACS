@@ -225,8 +225,8 @@ try:
 
 		ax.set(xlabel = "Time", ylabel = "Number of Tasks", title = "Number of Tasks allocated per machine with time")
 		plt.legend(loc = 'best')
-		plt.show()
 		plt.savefig('../analysis/' + Scheduler + '_line.png')
+		plt.show()
 
 		"""
 		Create dataframe consisting of worker ids, times of task arrivals and number of tasks
@@ -250,8 +250,8 @@ try:
 		sns.heatmap(df1, cmap = "rocket_r", cbar_kws = {"label" : "Number of Tasks Assigned", "orientation" : "horizontal"} )
 		plt.title("Cumulative HeatMap Distributions for Number of Tasks Scheduled on each Machine")
 		plt.xticks(rotation = 'horizontal')
-		plt.show()
 		plt.savefig('../analysis/' + Scheduler + '_heatmap1.png')
+		plt.show()
 
 		"""
 		Generate a heatmap showing the number of tasks scheduled on each machine for a specific intervals of time
@@ -265,8 +265,8 @@ try:
 		sns.heatmap(df2, cmap = "rocket_r", cbar_kws = {"label" : "Number of Tasks Assigned", "orientation" : "horizontal"} )
 		plt.title("Discrete HeatMap Distributions for Number of Tasks Scheduled on each Machine")
 		plt.xticks(rotation = 'horizontal')
-		plt.show()
 		plt.savefig('../analysis/' + Scheduler + '_heatmap2.png')
+		plt.show()
 except:
 	file1 = open(sys.argv[3], "a")
 	file1.write("{},{},{},{},{}\n".format(Scheduler, np.mean(worker_t_c_t), np.median(worker_t_c_t), np.mean(job_t_c_t), np.median(job_t_c_t)))

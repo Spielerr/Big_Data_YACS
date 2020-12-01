@@ -1,0 +1,14 @@
+{
+  "workers": [
+    {
+      "worker_id": 1,
+      "slots": 1,
+      "port": 4000
+    },
+    {
+        "worker_id": 2,
+        "slots": 7,
+        "port": 4001
+    }
+  ]
+}

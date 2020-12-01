@@ -19,10 +19,10 @@ python3 worker.py 4002 3 <br />
 
 Run the analysis file <br />
 This generates the analysis.csv holding information to plot <br />
-python3 analysis.py master_logfile.log ../analysis/analysis.csv <br />
+python3 analysis.py master_log_file.log ../analysis/analysis.csv <br />
 
 To plot the bar graphs for Part 2 Result 1 <br />
-python3 analysis.py master_logfile.log ../analysis/analysis.csv 1 <br />
+python3 analysis.py master_log_file.log ../analysis/analysis.csv 1 <br />
 
 To plot the heatmaps for Part 2 Result 2 <br />
-python3 analysis.py master_logfile.log ../analysis/analysis.csv 2 <br />
+python3 analysis.py master_log_file.log ../analysis/analysis.csv 2 <br />

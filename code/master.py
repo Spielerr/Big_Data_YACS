@@ -117,7 +117,7 @@ class Scheduler():
             # count maintains the count of how many random worker ids generated
             c = 1.5 # Can be set up as seen fit, we have choosen 1.5 after some experimentation
             if count >= (self.numOfWorkers * c) :
-                logger.debug("Full")
+                logger.debug("All Workers' slots full")
                 return None
             count += 1
             randomIndex = random.SystemRandom().randint(0, self.numOfWorkers - 1)
@@ -133,7 +133,7 @@ class Scheduler():
                 worker_index = indx
         # If no worker had free slot, return None
         if self.workers[worker_index].slotsFree == 0:
-            logger.debug("Full")
+            logger.debug("All Workers' slots full")
             return None
 
 

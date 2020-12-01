@@ -126,9 +126,6 @@ for job_id in log_dict.keys():
 Write job and task mean and median values to an external file
 Since we have to run the entire process individually for all the three scheduling algorithms
 """
-file1 = open(sys.argv[2], "a")
-file1.write("{},{},{},{},{}\n".format(Scheduler, np.mean(worker_t_c_t), np.median(worker_t_c_t), np.mean(job_t_c_t), np.median(job_t_c_t)))
-file1.close()
 
 
 """
@@ -140,6 +137,14 @@ try:
 		"""
 		Read the statistic values from the csv file into a 2d-array (statistic)
 		"""
+		"""
+		Print mean and median task and job completion times for each scheduling algorithm 
+		"""
+		print("Task completion time mean: ", Scheduler, np.mean(worker_t_c_t))
+		print("Task completion time median: ", Scheduler, np.median(worker_t_c_t))
+		print("Job completion time mean: ", Scheduler, np.mean(job_t_c_t))
+		print("Job completion time median: ", Scheduler, np.median(job_t_c_t))
+
 		statistic = []
 		algorithm = []
 		file1 = open(sys.argv[2], "r")
@@ -155,19 +160,19 @@ try:
 		"""
 		Generate a grouped bar graph to show analysis
 		"""
-		font = {'family' : 'normal', 'size' : 25}
+		font = {'size' : 25}
 		plt.rc('font', **font)
 		X = np.arange(4)
 		plt.style.use('ggplot')
-		fig, ax = plt.subplots(figsize=(3, 3))
+		fig, ax = plt.subplots(figsize=(5, 5))
 		ax.set(xlabel = "Statistic", ylabel = "Time", title = "Statistically Analysis of Scheduling Algorithms")
 		plt.bar(X + 0.00, statistic[0], color = '#0033cc', width = 0.2)
 		plt.bar(X + 0.25, statistic[1], color = '#009900', width = 0.2)
 		plt.bar(X + 0.50, statistic[2], color = '#800000', width = 0.2)
 		plt.xticks(X + 0.25, ["Task Mean Completion Time", "Task Median Completion Time", "Job Mean Completion Time", "Job Median Completion Time"])
 		plt.legend(algorithm, loc = 'best')
-		# plt.show()
-		plt.savefig('../analysis/' + Scheduler + '_bar.png')
+		plt.show()
+		plt.savefig('../analysis/bar.png')
 except:
 	None
 
@@ -179,19 +184,11 @@ Generate line graphs and heatmaps to show analysis
 try:
 	if sys.argv[3] == '2':
 		"""
-		Print mean and median task and job completion times for each scheduling algorithm 
-		print("Task completion time mean: ", Scheduler, np.mean(worker_t_c_t))
-		print("Task completion time median: ", Scheduler, np.median(worker_t_c_t))
-		print("Job completion time mean: ", Scheduler, np.mean(job_t_c_t))
-		print("Job completion time median: ", Scheduler, np.median(job_t_c_t))
-		"""
-
-		"""
 		To plot a simple line graph showing the cumulative number of tasks assigned
 		for each worker machine
 		Helpful for differentiating between the types of scheduling algorithms
 		"""
-		fig, ax = plt.subplots(figsize=(3, 3))
+		fig, ax = plt.subplots(figsize=(5, 5))
 		# # Add x-axis and y-axis
 		for k, v in machines.items():
 			y = [i for i in range(1, len(v)+1)]
@@ -200,7 +197,7 @@ try:
 
 		ax.set(xlabel = "Time", ylabel = "Number of Tasks", title = "Number of Tasks allocated per machine with time")
 		plt.legend(loc = 'best')
-		# plt.show()
+		plt.show()
 		plt.savefig('../analysis/' + Scheduler + '_line.png')
 
 		"""
@@ -225,7 +222,7 @@ try:
 		sns.heatmap(df1, cmap = "rocket_r", cbar_kws = {"label" : "Number of Tasks Assigned", "orientation" : "horizontal"} )
 		plt.title("Cumulative HeatMap Distributions for Number of Tasks Scheduled on each Machine")
 		plt.xticks(rotation = 'horizontal')
-		# plt.show()
+		plt.show()
 		plt.savefig('../analysis/' + Scheduler + '_heatmap1.png')
 
 		"""
@@ -240,7 +237,9 @@ try:
 		sns.heatmap(df2, cmap = "rocket_r", cbar_kws = {"label" : "Number of Tasks Assigned", "orientation" : "horizontal"} )
 		plt.title("Discrete HeatMap Distributions for Number of Tasks Scheduled on each Machine")
 		plt.xticks(rotation = 'horizontal')
-		# plt.show()
+		plt.show()
 		plt.savefig('../analysis/' + Scheduler + '_heatmap2.png')
 except:
-	None
+	file1 = open(sys.argv[2], "a")
+	file1.write("{},{},{},{},{}\n".format(Scheduler, np.mean(worker_t_c_t), np.median(worker_t_c_t), np.mean(job_t_c_t), np.median(job_t_c_t)))
+	file1.close()

@@ -49,7 +49,7 @@ configJson = json.load(configFile)
 configFile.close()
 
 """
-Initialize a job queue as a dictionary and a task queue as a list
+Initialize a job queue as a dictionary and a task queue as a list (both as global variables)
 """
 jobQueue = {}
 taskQueue = []
@@ -142,7 +142,7 @@ class Scheduler():
 
 
 """
-Maintains information about Jobs recieved
+Maintains information about Jobs received
 """
 class Job():
     def __init__(self,jobData):
@@ -166,7 +166,7 @@ class Job():
 
 
 """
-Maintains info about Worker
+Maintains information about Worker
 """
 class Worker():
     def __init__(self,portNo,workerID,slots):
@@ -216,7 +216,10 @@ class JobScheduler(threading.Thread):
             threadLock.acquire()
 
             # Scheduling as many tasks as possible for execution
+<<<<<<< HEAD
             # And communicating them to their respective workers as scheduled by scheduler
+=======
+>>>>>>> 279730567d3b48c8556f4b188ffc9ae568919b13
             worker = self.scheduler.scheduler()
             threadLock.release()
             while worker:
@@ -322,13 +325,10 @@ class WorkerManager(threading.Thread):
                 #If all reduce tasks completed, means job completed
                 #Updating the job completion information
                 if job.numOfRedTasks == 0:
-                    # print(workerData['job_id'])
                     logger.info("Ending Job job_id = {}".format(workerData['job_id']))
                     threadLock.acquire()
                     del jobQueue[workerData['job_id']]
                     threadLock.release()
-
-
 
 
 workers = initWorkers(configJson)
@@ -354,7 +354,6 @@ def close_sockets(signum,frame):
     workerSocket.close()
     logger.info("Ending Master")
     sys.exit(1)
-
 
 
 sig_int = signal.getsignal(signal.SIGINT)

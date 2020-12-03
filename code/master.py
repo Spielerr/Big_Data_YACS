@@ -216,10 +216,8 @@ class JobScheduler(threading.Thread):
             threadLock.acquire()
 
             # Scheduling as many tasks as possible for execution
-<<<<<<< HEAD
             # And communicating them to their respective workers as scheduled by scheduler
-=======
->>>>>>> 279730567d3b48c8556f4b188ffc9ae568919b13
+
             worker = self.scheduler.scheduler()
             threadLock.release()
             while worker:

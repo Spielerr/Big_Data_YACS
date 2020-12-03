@@ -24,7 +24,7 @@ fromMasterCommunicationSocket.bind(('',workerPort))
 
 
 """
-Thread lock set up to ensure no memory access issues causing race conditions
+Thread lock set up to restrict memory access protecting from race conditions
 """
 threadLock = threading.Lock()
 
@@ -97,7 +97,7 @@ class Worker(threading.Thread):
             # Add all tasks that were added to task queue during sleep of 1 second into task pool
             if len(taskQueue) > len(temp_tq):
                 temp_tq.extend(taskQueue[len(temp_tq)::])
-            # Remove all tasks that have completed execution from the pool
+            # Remove all tasks completed execution from the pool
             taskQueue = [t for t in temp_tq if t['duration'] != 0]
             
             threadLock.release()
@@ -115,8 +115,9 @@ Closes sockets when Worker is terminated
 def close_sockets(signum,frame):
     signal.signal(signal.SIGINT, sig_int)
     print("Socket Closed")
-    
+    logger.debug("Closing Socket for Master Communication")
     fromMasterCommunicationSocket.close()
+    logger.debug("Ending Worker")
     sys.exit(1)
 
 

@@ -18,7 +18,7 @@ jobListenPort = 5000
 """
 Sets up the port for listening to requests
 """
-logger.debug("Binding Socket to listen to jobs")
+logger.debug("Binding Socket to listen to to port {} for jobs".format(jobListenPort))
 jobListenSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 jobListenSocket.bind(('',jobListenPort))
 
@@ -94,7 +94,7 @@ class Scheduler():
         initRRIndex = self.roundRobinIndex
         while self.workers[self.roundRobinIndex].slotsFree == 0:
             self.roundRobinIndex = (self.roundRobinIndex + 1) % self.numOfWorkers
-            # If there are no free slots after one round of checking, None is returned
+            # Upon no free slots after one round of checking, None is returned
             if initRRIndex == self.roundRobinIndex:
                 logger.debug("All Workers' slots full")
                 return None
@@ -197,7 +197,7 @@ class JobScheduler(threading.Thread):
 
     def run(self):
         while True:
-            #Listening for job requests
+            # Listening for job requests
             jobListenSocket.listen(1)
             clientSocket, _ = jobListenSocket.accept()
             jobData = clientSocket.recv(2048)
@@ -215,8 +215,8 @@ class JobScheduler(threading.Thread):
 
             threadLock.acquire()
 
-            #Scheduling as many tasks as possible for execution
-            # And communicating them to their reapective workers
+            # Scheduling as many tasks as possible for execution
+            # And communicating them to their respective workers as scheduled by scheduler
             worker = self.scheduler.scheduler()
             threadLock.release()
             while worker:

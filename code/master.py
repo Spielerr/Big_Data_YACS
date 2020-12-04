@@ -134,8 +134,8 @@ class Scheduler():
 			# Then return None
 			# count maintains the count of how many random worker ids generated
 
-            # Can be set up as seen fit, we have choosen 1.5 after some experimentation
-			c = 1.5 
+			# Can be set up as seen fit, we have choosen 1.5 after some experimentation
+			c = 1.5
 			if count >= (self.numOfWorkers * c) :
 				logger.debug("All Workers' slots full")
 				return None
@@ -242,7 +242,7 @@ class JobListener(threading.Thread):
 				m_taskQueue.append(map_task)
 
 			threadLock.release()
-			
+
 
 """
 Schedules the Map tasks of a Job
@@ -303,7 +303,7 @@ class JobScheduler(threading.Thread):
 
 				if task['type'] == "M":
 					logger.info("Sending Map Task task_id = {} job_id = {} on Worker worker_id = {}".format(task['task_id'],task['job_id'],worker.workerID))
-				
+
 				threadLock.acquire()
 				worker = self.scheduler.scheduler()
 				threadLock.release()
@@ -334,7 +334,7 @@ class ReduceTaskScheduler(threading.Thread):
 
 			while worker:
 
-                # there are no more reduce tasks to be scheduled
+				# there are no more reduce tasks to be scheduled
 				if not r_taskQueue:
 					worker.slotsFree += 1
 					break
@@ -343,7 +343,7 @@ class ReduceTaskScheduler(threading.Thread):
 				task = r_taskQueue.pop(0)
 				threadLock.release()
 
-                #Communication to workers
+				#Communication to workers
 				toWorkerSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 				toWorkerSocket.connect(('',worker.portNo))
 				task = json.dumps(task)
@@ -353,7 +353,7 @@ class ReduceTaskScheduler(threading.Thread):
 				task = json.loads(task)
 
 				if task['type'] == "R":
-                    logger.info("Sending Reduce Task task_id = {} job_id = {} on Worker worker_id = {}".format(task['task_id'],task['job_id'],worker.workerID))
+					logger.info("Sending Reduce Task task_id = {} job_id = {} on Worker worker_id = {}".format(task['task_id'],task['job_id'],worker.workerID))
 
 				threadLock.acquire()
 				worker = scheduler.scheduler()

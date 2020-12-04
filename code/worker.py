@@ -54,7 +54,21 @@ class Listener(threading.Thread):
             else:
                 logger.info("Starting Reduce Task task_id = {} job_id = {} on Worker worker_id = {}".format(taskData['task_id'], taskData['job_id'], worker_id))
             
-            taskQueue.append(taskData)
+            if int(taskData['duration']) <= 0:
+                if taskData["type"] == 'M':
+                    logger.info("Ending Map Task task_id = {} job_id = {} on Worker worker_id = {}".format(taskData['task_id'], taskData['job_id'], worker_id))
+                else:
+                    logger.info("Ending Reduce Task task_id = {} job_id = {} on Worker worker_id = {}".format(taskData['task_id'], taskData['job_id'], worker_id))
+
+                taskData['worker_id'] = worker_id
+                taskData = json.dumps(taskData)
+                # Communicate with master about task completion
+                toMasterCommunicationSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                toMasterCommunicationSocket.connect(("localhost",masterPort))
+                toMasterCommunicationSocket.sendall(taskData.encode())
+                toMasterCommunicationSocket.close()
+            else:
+                taskQueue.append(taskData)
             threadLock.release()
             
 
@@ -81,7 +95,7 @@ class Worker(threading.Thread):
             for task in temp_tq:
                 task['duration'] = task['duration'] - 1
                 # Check if task execution completed
-                if int(task['duration']) == 0:
+                if int(task['duration']) <= 0:
                     if task["type"] == 'M':
                         logger.info("Ending Map Task task_id = {} job_id = {} on Worker worker_id = {}".format(task['task_id'], task['job_id'], worker_id))
                     else:

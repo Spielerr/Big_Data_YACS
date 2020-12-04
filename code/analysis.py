@@ -150,11 +150,6 @@ for job_id in log_dict.keys():
 			machines[log_dict[job_id][log_dict[job_id]["job_id"] + "_R" + str(i)]["worker_id"]] = [(log_dict[job_id][log_dict[job_id]["job_id"] + "_R" + str(i)]["start_time_o"] - log_dict["Job 0"]["start_time_o"]).total_seconds()*1000]		
 		worker_t_c_t.append(log_dict[job_id][log_dict[job_id]["job_id"] + "_R" + str(i)]["diff"])
 
-"""
-Write job and task mean and median values to an external file
-Since we have to run the entire process individually for all the three scheduling algorithms
-"""
-
 
 """
 Provide argument as 1 to generate the bar graphs for Part 2 Result 1
@@ -173,8 +168,7 @@ try:
 		print("Job completion time mean: ", Scheduler, np.mean(job_t_c_t))
 		print("Job completion time median: ", Scheduler, np.median(job_t_c_t))
 
-		statistic1 = []
-		statistic2 = []
+		statistic = []
 		algorithm = []
 		file1 = open(sys.argv[3], "r")
 		while 1:
@@ -184,38 +178,28 @@ try:
 			l = line.split(",")
 			# print(l)
 			algorithm.append(l[0])
-			statistic1.append(list(map(float, l[1:3])))
-			statistic2.append(list(map(float, l[3:])))
+			statistic.append(list(map(float, l[1:])))
 		file1.close()
 
 		"""
 		Generate a grouped bar graph to show analysis
-		One for Task completion times and another for Job completion times
 		"""
 		font = {'size' : 25}
 		plt.rc('font', **font)
-		X = np.arange(2)
+		X = np.arange(4)
 		plt.style.use('ggplot')
 		fig, ax = plt.subplots(figsize=(5, 5))
-		ax.set(xlabel = "Statistic", ylabel = "Time", title = "Statistically Analysis of Scheduling Algorithms - Task Completion")
-		plt.bar(X + 0.00, statistic1[0], color = '#0033cc', width = 0.2)
-		plt.bar(X + 0.25, statistic1[1], color = '#009900', width = 0.2)
-		plt.bar(X + 0.50, statistic1[2], color = '#800000', width = 0.2)
-		plt.xticks(X + 0.25, ["Task Mean Completion Time", "Task Median Completion Time"])
+		ax.set(xlabel = "Statistic", ylabel = "Time", title = "Statistically Analysis of Scheduling Algorithms")
+		ax.set_ylim([0,max(statistic[0]+statistic[1]+statistic[2])+3000])
+		plt.bar(X + 0.00, statistic[0], color = '#0033cc', width = 0.2)
+		plt.bar(X + 0.25, statistic[1], color = '#009900', width = 0.2)
+		plt.bar(X + 0.50, statistic[2], color = '#800000', width = 0.2)
+		plt.xticks(X + 0.25, ["Task Mean Completion Time", "Task Median Completion Time", "Job Median Completion Time", "Job Median Completion Time"])
 		plt.legend(algorithm, loc = 'best')
+		plt.savefig('../analysis/bar.png')
 		plt.show()
-		plt.savefig('../analysis/bar1.png')
-
-		fig, ax = plt.subplots(figsize=(5, 5))
-		ax.set(xlabel = "Statistic", ylabel = "Time", title = "Statistically Analysis of Scheduling Algorithms - Job Completion")
-		plt.bar(X + 0.00, statistic2[0], color = '#0033cc', width = 0.2)
-		plt.bar(X + 0.25, statistic2[1], color = '#009900', width = 0.2)
-		plt.bar(X + 0.50, statistic2[2], color = '#800000', width = 0.2)
-		plt.xticks(X + 0.25, ["Job Mean Completion Time", "Job Median Completion Time"])
-		plt.legend(algorithm, loc = 'best')
-		plt.show()
-		plt.savefig('../analysis/bar2.png')
-except:
+except Exception as e:
+	# print(e)
 	None
 
 
@@ -269,9 +253,9 @@ try:
 
 		"""
 		Generate a heatmap showing the number of tasks scheduled on each machine for a specific intervals of time
-		This here shows the number of tasks scheduled every 5 seconds on each of the worker machines
+		This here shows the number of tasks scheduled every 3 seconds on each of the worker machines
 		"""
-		df2 = df1.iloc[:, ::5]
+		df2 = df1.iloc[:, ::3]
 		temp_df = df2[0]
 		df2 = df2.diff(axis = 1)
 		for i in range(len(temp_df)):
@@ -282,6 +266,10 @@ try:
 		plt.savefig('../analysis/' + Scheduler + '_heatmap2.png')
 		plt.show()
 except:
+	"""
+	Write job and task mean and median values to an external file
+	Since we have to run the entire process individually for all the three scheduling algorithms
+	"""
 	file1 = open(sys.argv[3], "a")
 	file1.write("{},{},{},{},{}\n".format(Scheduler, np.mean(worker_t_c_t), np.median(worker_t_c_t), np.mean(job_t_c_t), np.median(job_t_c_t)))
 	file1.close()

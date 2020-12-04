@@ -189,7 +189,7 @@ try:
 		X = np.arange(4)
 		plt.style.use('ggplot')
 		fig, ax = plt.subplots(figsize=(5, 5))
-		ax.set(xlabel = "Statistic", ylabel = "Time", title = "Statistically Analysis of Scheduling Algorithms")
+		ax.set(xlabel = "Statistic", ylabel = "Time", title = "Statistical Analysis of Scheduling Algorithms")
 		ax.set_ylim([0,max(statistic[0]+statistic[1]+statistic[2])+3000])
 		plt.bar(X + 0.00, statistic[0], color = '#0033cc', width = 0.2)
 		plt.bar(X + 0.25, statistic[1], color = '#009900', width = 0.2)
@@ -221,7 +221,7 @@ try:
 			# print(v, y)
 			ax.plot(sorted(v), y, label = "Machine " + k)
 
-		ax.set(xlabel = "Time", ylabel = "Number of Tasks", title = "Number of Tasks allocated per machine with time")
+		ax.set(xlabel = "Time", ylabel = "Number of Tasks", title = "Number of Tasks allocated per Machine with Time")
 		plt.legend(loc = 'best')
 		plt.savefig('../analysis/' + Scheduler + '_line.png')
 		plt.show()
